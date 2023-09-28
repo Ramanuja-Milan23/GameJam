@@ -11,10 +11,12 @@ public class Movement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     public Animator animator;
 
+    public Vector2 lookDir;
 
     // Update is called once per frame
     void Update()
     {
+        
         //Input
         velocity.x = Input.GetAxisRaw("Horizontal");
         velocity.y = Input.GetAxisRaw("Vertical");
@@ -26,12 +28,14 @@ public class Movement : MonoBehaviour
         if (velocity.sqrMagnitude > 0.3){
             animator.SetFloat("prevHorizontal",velocity.x);
             animator.SetFloat("prevVertical",velocity.y);
+            lookDir = velocity;
         }
         
     }
     private void FixedUpdate()
     {
         //Setting Velocity
+
         rb.velocity = velocity * Speed * Time.fixedDeltaTime;
     }
 }
