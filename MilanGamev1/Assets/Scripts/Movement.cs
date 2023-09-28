@@ -31,6 +31,10 @@ public class Movement : MonoBehaviour
         animator.SetFloat("Horizontal",velocity.x);
         animator.SetFloat("Vertical",velocity.y);
         animator.SetFloat("Speed",velocity.sqrMagnitude * Speed);
+        if (velocity.sqrMagnitude > 0.3){
+            animator.SetFloat("prevHorizontal",velocity.x);
+            animator.SetFloat("prevVertical",velocity.y);
+        }
         
     }
     private void FixedUpdate()
