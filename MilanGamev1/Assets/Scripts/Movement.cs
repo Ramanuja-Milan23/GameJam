@@ -22,12 +22,12 @@ public class Movement : MonoBehaviour
         //Movement floats for animation
         animator.SetFloat("Horizontal",velocity.x);
         animator.SetFloat("Vertical",velocity.y);
-        animator.SetFloat("Speed",velocity.sqrMagnitude);
+        animator.SetFloat("Speed",velocity.sqrMagnitude * Speed);
         
     }
     private void FixedUpdate()
     {
         //Setting Velocity
-        rb.velocity = new Vector2(velocity.x * Speed * Time.fixedDeltaTime, velocity.y * Speed * Time.fixedDeltaTime);
+        rb.velocity = velocity * Speed * Time.fixedDeltaTime;
     }
 }
