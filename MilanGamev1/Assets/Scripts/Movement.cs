@@ -35,7 +35,7 @@ public class Movement : MonoBehaviour
         if (velocity.sqrMagnitude > 0.3){
             animator.SetFloat("prevHorizontal",velocity.x);
             animator.SetFloat("prevVertical",velocity.y);
-            lookDir = velocity;
+            faceDir = velocity;
         }
 
     }
