@@ -7,20 +7,24 @@ public class Aim : MonoBehaviour
 {
     [SerializeField] private GameObject[] shootablesParent;
     [SerializeField] private Camera cam;
-    [SerializeField] private float shootRadius = 1f;
+
+    private Movement playerMovement;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerMovement = GetComponent<Movement>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            ;
-        }
+        Vector2 shootDir = playerMovement.faceDir;
+
+        RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
+
+        if(shoot.collider != null ) Debug.DrawLine(transform.position, shoot.point, Color.red);
+
+        Debug.DrawRay(transform.position, shootDir, Color.blue);
     }
 }
