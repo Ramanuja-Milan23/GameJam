@@ -201,10 +201,10 @@ TextureImporter:
       name: street_4
       rect:
         serializedVersion: 2
-        x: 99
-        y: 48
-        width: 29
-        height: 75
+        x: 175
+        y: 191
+        width: 65
+        height: 65
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
