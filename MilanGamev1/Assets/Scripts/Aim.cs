@@ -23,7 +23,7 @@ public class Aim : MonoBehaviour
 
         RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
 
-        if(shoot.collider != null ) Debug.DrawLine(transform.position, shoot.point, Color.red);
+        if(shoot.collider != null) Debug.DrawLine(transform.position, shoot.point, Color.red);
 
         Debug.DrawRay(transform.position, shootDir, Color.blue);
     }
