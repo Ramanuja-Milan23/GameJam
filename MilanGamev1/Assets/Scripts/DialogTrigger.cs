@@ -8,9 +8,10 @@ public class DialogTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject dialogArea;
     [SerializeField] private Dialogs dialogs;
-    [SerializeField] private Queue<int> dialogIDs;
+    [SerializeField] private List<string> dialogIDs;
 
     private bool hasSaidDialog = false;
+    private int currentDialog = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,15 +23,34 @@ public class DialogTrigger : MonoBehaviour
     {
         if (collision.name == "Player" && !hasSaidDialog)
         {
-            foreach(int i in dialogIDs) dialogArea.GetComponentInChildren<TMP_Text>().SetText(dialogs.dialogs[i]);
+            currentDialog = 0;
+
+            dialogArea.SetActive(true);
+
+            var text = dialogs.dialogs[dialogIDs[currentDialog]];
+
+            dialogArea.GetComponentInChildren<TMP_Text>().SetText(text);
 
             hasSaidDialog = true;
         }
     }
 
-    // Update is called once per frame
+    // Fixed Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(currentDialog < dialogs.dialogs.Count)
+            {
+                currentDialog++;
+
+                if (currentDialog == dialogs.dialogs.Count) { dialogArea.SetActive(false); }
+                else
+                {
+                    var text = dialogs.dialogs[dialogIDs[currentDialog]];
+                    dialogArea.GetComponentInChildren<TMP_Text>().SetText(text);
+                }
+            }
+        }
     }
 }
