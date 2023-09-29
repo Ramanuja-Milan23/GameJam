@@ -23,7 +23,7 @@ public class PathFollower : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         var list = pathFollower.GetComponentsInChildren<PathNode>();
         Vector3 currentPathNode = list[currentNode].transform.position;
@@ -42,7 +42,7 @@ public class PathFollower : MonoBehaviour
 
         if (transform.position != currentPathNode)
         {
-            transform.position = Vector3.Lerp(lastNodePos, currentPathNode, timeSinceCurrentNodeStart);
+            transform.position = faceDir * speed; //Vector3.Lerp(lastNodePos, currentPathNode, timeSinceCurrentNodeStart);
         }
         else
         {
