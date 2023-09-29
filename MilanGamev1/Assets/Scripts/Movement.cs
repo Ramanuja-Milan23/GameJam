@@ -8,7 +8,6 @@ public class Movement : MonoBehaviour
 {
     public Vector2 velocity;
     public Vector2 faceDir;
-    public bool hasGun;
 
     [SerializeField] private float Speed = 0f;
     [SerializeField] private Rigidbody2D rb;
@@ -33,7 +32,6 @@ public class Movement : MonoBehaviour
         animator.SetFloat("Horizontal",velocity.x);
         animator.SetFloat("Vertical",velocity.y);
         animator.SetFloat("Speed",velocity.sqrMagnitude * Speed);
-        //animator.SetBool("HasGun",true);
         if (velocity.sqrMagnitude > 0.3){
             animator.SetFloat("prevHorizontal",velocity.x);
             animator.SetFloat("prevVertical",velocity.y);
