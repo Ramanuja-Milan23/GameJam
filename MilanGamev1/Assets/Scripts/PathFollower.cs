@@ -27,7 +27,7 @@ public class PathFollower : MonoBehaviour
     {
         var list = pathFollower.GetComponentsInChildren<PathNode>();
         Vector3 currentPathNode = list[currentNode].transform.position;
-        timeSinceCurrentNodeStart += Time.deltaTime * speed;
+        timeSinceCurrentNodeStart += Time.deltaTime;
 
         if(currentNode == 0)
         {
@@ -42,7 +42,9 @@ public class PathFollower : MonoBehaviour
 
         if (transform.position != currentPathNode)
         {
-            transform.position = faceDir * speed; //Vector3.Lerp(lastNodePos, currentPathNode, timeSinceCurrentNodeStart);
+            float dist = Vector3.Distance(lastNodePos, currentPathNode);
+
+            transform.position = Vector3.Lerp(lastNodePos, currentPathNode, timeSinceCurrentNodeStart * speed / dist);
         }
         else
         {
