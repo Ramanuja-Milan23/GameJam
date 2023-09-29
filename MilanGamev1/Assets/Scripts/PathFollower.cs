@@ -9,12 +9,14 @@ public class PathFollower : MonoBehaviour
 {
     [SerializeField] private GameObject pathFollower;
     [SerializeField] private float speed;
+    public Animator animator;
 
     private int currentNode = 0;
     private float timeSinceCurrentNodeStart = 0f;
     private Vector3 lastNodePos;
 
     public Vector2 faceDir;
+    public float thresholdSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,10 @@ public class PathFollower : MonoBehaviour
             {
                 currentNode++;
             }
+            else
+            {
+                speed = 0f; // temporary FIX HERE, THEEK KR DIO BHAI PLEASE
+            }
             lastNodePos = currentPathNode;
 
             faceDir = (list[currentNode].transform.position - lastNodePos).normalized;
@@ -63,6 +69,17 @@ public class PathFollower : MonoBehaviour
 
             timeSinceCurrentNodeStart = 0f;
         }
+
+
+        //animator Segment
+        animator.SetFloat("Horizontal",faceDir.x*speed);
+        animator.SetFloat("Vertical",faceDir.y*speed);
+        animator.SetFloat("Speed",speed);
+        if (speed > thresholdSpeed){
+            animator.SetFloat("prevHorizontal",faceDir.x*speed);
+            animator.SetFloat("prevVertical",faceDir.y*speed);
+        }
+
 
         // Draw the path
         for(int i = 0; i < list.Length - 1; i++)
