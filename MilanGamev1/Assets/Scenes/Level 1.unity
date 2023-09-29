@@ -9759,6 +9759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0}
   faceDir: {x: 0, y: 0}
+  hasGun: 0
   Speed: 100
   rb: {fileID: 1763530630}
   animator: {fileID: 1763530634}
@@ -9823,7 +9824,7 @@ Transform:
   m_GameObject: {fileID: 1763530628}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.34, y: -0.88, z: 0}
+  m_LocalPosition: {x: -2.86, y: 0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
