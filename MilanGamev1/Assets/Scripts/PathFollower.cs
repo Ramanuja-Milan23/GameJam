@@ -20,7 +20,9 @@ public class PathFollower : MonoBehaviour
     private float actualSpeed;
 
     private bool isWaitingForTrigger = false;
+    private bool isRunning = true;
     private string waitForMessage = "";
+    private List<string> receivedMessages;
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +37,16 @@ public class PathFollower : MonoBehaviour
             if(waitForMessage == broadCastMessage) isWaitingForTrigger = false;
             actualSpeed = speed;
         }
+        else
+        {
+            receivedMessages.Add(broadCastMessage);
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (isWaitingForTrigger) return;
+        if (isWaitingForTrigger || !isRunning) return;
 
         var list = pathFollower.GetComponentsInChildren<PathNode>();
         Vector3 currentPathNode = list[currentNode].transform.position;
@@ -74,9 +80,21 @@ public class PathFollower : MonoBehaviour
         }
         else
         {
-            if(currentNode + 1 < list.Length)
+            if (currentNode + 1 < list.Length)
             {
-                currentNode++;
+                // if it was broadcast then pause
+                if (!string.IsNullOrEmpty(list[currentNode].pauseOnMessage))
+                {
+                    if (receivedMessages.Contains(list[currentNode].pauseOnMessage))
+                    {
+                        isRunning = false;
+                        actualSpeed = 0f;
+                    }
+                }
+                else
+                {
+                    currentNode++;
+                }
             }
             else
             {
@@ -85,8 +103,8 @@ public class PathFollower : MonoBehaviour
             lastNodePos = currentPathNode;
 
             faceDir = (list[currentNode].transform.position - lastNodePos).normalized;
-            
-            if(faceDir.magnitude < 0.3)
+
+            if (faceDir.magnitude < 0.3)
             {
                 faceDir = Vector2.down;
             }

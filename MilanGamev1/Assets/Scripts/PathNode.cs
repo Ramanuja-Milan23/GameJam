@@ -5,6 +5,7 @@ using UnityEngine;
 public class PathNode : MonoBehaviour
 {
     [SerializeField] public string triggerOnMessage;
+    [SerializeField] public string pauseOnMessage;
 
     // Start is called before the first frame update
     void Start()
