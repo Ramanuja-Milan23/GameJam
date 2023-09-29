@@ -17,6 +17,10 @@ public class PathFollower : MonoBehaviour
 
     public Vector2 faceDir;
     public float thresholdSpeed;
+    private float actualSpeed;
+
+    private bool isWaitingForTrigger = false;
+    private string waitForMessage = "";
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +28,20 @@ public class PathFollower : MonoBehaviour
         faceDir = Vector2.down;
     }
 
+    public void getBroadcastTrigger(string broadCastMessage)
+    {
+        if(isWaitingForTrigger)
+        {
+            if(waitForMessage == broadCastMessage) isWaitingForTrigger = false;
+            actualSpeed = speed;
+        }
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (isWaitingForTrigger) return;
+
         var list = pathFollower.GetComponentsInChildren<PathNode>();
         Vector3 currentPathNode = list[currentNode].transform.position;
         timeSinceCurrentNodeStart += Time.deltaTime;
@@ -42,11 +57,20 @@ public class PathFollower : MonoBehaviour
             return;
         }
 
+        if(!string.IsNullOrEmpty(list[currentNode].triggerOnMessage))
+        {
+            isWaitingForTrigger = true;
+            waitForMessage = list[currentNode].triggerOnMessage;
+            actualSpeed = 0f;
+        }
+
         if (transform.position != currentPathNode)
         {
+            actualSpeed = speed;
+
             float dist = Vector3.Distance(lastNodePos, currentPathNode);
 
-            transform.position = Vector3.Lerp(lastNodePos, currentPathNode, timeSinceCurrentNodeStart * speed / dist);
+            transform.position = Vector3.Lerp(lastNodePos, currentPathNode, timeSinceCurrentNodeStart * actualSpeed / dist);
         }
         else
         {
@@ -56,7 +80,7 @@ public class PathFollower : MonoBehaviour
             }
             else
             {
-                speed = 0f; // temporary FIX HERE, THEEK KR DIO BHAI PLEASE
+                actualSpeed = 0f;
             }
             lastNodePos = currentPathNode;
 
@@ -72,14 +96,15 @@ public class PathFollower : MonoBehaviour
 
 
         //animator Segment
-        animator.SetFloat("Horizontal",faceDir.x*speed);
-        animator.SetFloat("Vertical",faceDir.y*speed);
-        animator.SetFloat("Speed",speed);
-        if (speed > thresholdSpeed){
-            animator.SetFloat("prevHorizontal",faceDir.x*speed);
-            animator.SetFloat("prevVertical",faceDir.y*speed);
+        animator.SetFloat("Horizontal", faceDir.x * actualSpeed);
+        animator.SetFloat("Vertical", faceDir.y * actualSpeed);
+        animator.SetFloat("Speed", actualSpeed);
+        
+        if (speed > thresholdSpeed)
+        {
+            animator.SetFloat("prevHorizontal", faceDir.x * actualSpeed);
+            animator.SetFloat("prevVertical", faceDir.y * actualSpeed);
         }
-
 
         // Draw the path
         for(int i = 0; i < list.Length - 1; i++)
