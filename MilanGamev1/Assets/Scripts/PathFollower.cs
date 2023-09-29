@@ -34,12 +34,12 @@ public class PathFollower : MonoBehaviour
     {
         if(isWaitingForTrigger)
         {
-            if(waitForMessage == broadCastMessage) isWaitingForTrigger = false;
-            actualSpeed = speed;
+            if(waitForMessage == broadCastMessage) this.isWaitingForTrigger = false;
+            this.actualSpeed = speed;
         }
         else
         {
-            receivedMessages.Add(broadCastMessage);
+            this.receivedMessages.Add(broadCastMessage);
         }
     }
 
@@ -83,7 +83,7 @@ public class PathFollower : MonoBehaviour
             if (currentNode + 1 < list.Length)
             {
                 // if it was broadcast then pause
-                if (!string.IsNullOrEmpty(list[currentNode].pauseOnMessage))
+                if (!string.IsNullOrEmpty(list[currentNode].pauseOnMessage) && receivedMessages != null)
                 {
                     if (receivedMessages.Contains(list[currentNode].pauseOnMessage))
                     {

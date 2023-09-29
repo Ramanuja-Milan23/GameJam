@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BroadcasterOnTrigger : MonoBehaviour
+public class ShootTrigger : Shootable
 {
     [SerializeField] private string broadcastMethod;
     [SerializeField] private string broadcastOnTrigger;
@@ -11,20 +11,17 @@ public class BroadcasterOnTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ;
+        
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public override void shot()
     {
-        if (collision.name == "Player")
-        {
-            broadcastScope.BroadcastMessage("getBroadcastTrigger", broadcastOnTrigger);
-        }
+        broadcastScope.BroadcastMessage("getBroadcastTrigger", broadcastOnTrigger);
     }
 
     // Update is called once per frame
     void Update()
     {
-        ;
+        
     }
 }
