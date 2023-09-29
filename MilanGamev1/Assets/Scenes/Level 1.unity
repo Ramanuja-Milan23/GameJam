@@ -8683,7 +8683,7 @@ Transform:
   m_GameObject: {fileID: 1763530628}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.36, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9107,8 +9107,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathFollower: {fileID: 432208347}
-  speed: 0.0001
+  speed: 2
+  animator: {fileID: 2023121781}
   faceDir: {x: 0, y: 0}
+  thresholdSpeed: 0.5
 --- !u!1 &2031100263
 GameObject:
   m_ObjectHideFlags: 0
