@@ -8699,6 +8699,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5716454185587542204, guid: 6189e00f2790f8e4aa0ec5e7ed51607f, type: 3}
   m_PrefabInstance: {fileID: 7597511782304418228}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1923597223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1923597224}
+  m_Layer: 0
+  m_Name: DialogTriggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1923597224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923597223}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9299, y: 0.32269508, z: 0.004506111}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1932518131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5716454185587542204, guid: 6189e00f2790f8e4aa0ec5e7ed51607f, type: 3}
@@ -9412,3 +9443,4 @@ SceneRoots:
   - {fileID: 1420646852}
   - {fileID: 2031100266}
   - {fileID: 532073522}
+  - {fileID: 1923597224}

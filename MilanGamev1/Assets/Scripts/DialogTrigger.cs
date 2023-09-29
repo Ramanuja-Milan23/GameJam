@@ -8,7 +8,7 @@ public class DialogTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject dialogArea;
     [SerializeField] private Dialogs dialogs;
-    [SerializeField] private int dialogID = 0;
+    [SerializeField] private Queue<int> dialogIDs;
 
     private bool hasSaidDialog = false;
 
@@ -20,9 +20,9 @@ public class DialogTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Player")
+        if (collision.name == "Player" && !hasSaidDialog)
         {
-            dialogArea.GetComponentInChildren<TMP_Text>();
+            foreach(int i in dialogIDs) dialogArea.GetComponentInChildren<TMP_Text>().SetText(dialogs.dialogs[i]);
 
             hasSaidDialog = true;
         }
