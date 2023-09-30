@@ -28516,6 +28516,7 @@ GameObject:
   - component: {fileID: 1200392904}
   - component: {fileID: 1200392906}
   - component: {fileID: 1200392907}
+  - component: {fileID: 1200392909}
   m_Layer: 0
   m_Name: DrunkMan
   m_TagString: Untagged
@@ -28579,7 +28580,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 1165614068, guid: 5a8e1ba309b8a4e43a93302f1fcb537e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -28637,7 +28638,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.08}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -28648,7 +28649,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4, y: 0.8}
   m_EdgeRadius: 0
 --- !u!114 &1200392906
 MonoBehaviour:
@@ -28666,6 +28667,37 @@ MonoBehaviour:
   timeTillKill: 6
   timeTillKillAnimationStart: 4
   qteSlider: {fileID: 665156739}
+  animator: {fileID: 1200392909}
+  startDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1200392909}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startDeath
+          m_BoolArgument: 0
+        m_CallState: 2
+  startKill:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1200392909}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startKill
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1200392907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28710,6 +28742,27 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1200392909
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200392901}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1120bcbabe14a2748a5eecac2dc0a6e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1203956763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40253,7 +40306,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 30
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -42723,7 +42776,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -42953,7 +43006,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -43296,12 +43349,12 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: c5f451721c16f004aa45490775842384, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 2091938610, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 22
     m_Data: {fileID: -1640777395, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 753674077, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
+    m_Data: {fileID: 2091938610, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   - m_RefCount: 48
     m_Data: {fileID: 2078020054, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   - m_RefCount: 1
@@ -43313,7 +43366,7 @@ Tilemap:
   - m_RefCount: 12
     m_Data: {fileID: -175076067, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1647279979, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
+    m_Data: {fileID: 753674077, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1665215352, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   - m_RefCount: 22
@@ -43356,8 +43409,8 @@ Tilemap:
     m_Data: {fileID: -1288142783, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 934522564, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1647279979, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1242054862, guid: 796f78e9ed2e74b4fbbb78d7b7a69bd6, type: 3}
   m_TileMatrixArray:
