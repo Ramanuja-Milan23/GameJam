@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BodyguardLogic : ShootableLogic
 {
@@ -8,6 +9,7 @@ public class BodyguardLogic : ShootableLogic
     [SerializeField] private float timeTillKill = 0f;
     [SerializeField] private float timeTillKillAnimationStart = 0f;
     [SerializeField] private bool willKillDog = false;
+    [SerializeField] private GameObject qteSlider;
 
     private float timeAtLevelBegin = 0f;
     private bool isActive = false;
@@ -26,6 +28,7 @@ public class BodyguardLogic : ShootableLogic
         {
             timeAtLevelBegin = Time.realtimeSinceStartup;
             isActive = true;
+            if (willKillDog) qteSlider.SetActive(true);
         }
     }
 
@@ -35,6 +38,7 @@ public class BodyguardLogic : ShootableLogic
 
         isActive = false;
         isAnimating = true;
+        if (willKillDog) qteSlider.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,6 +53,8 @@ public class BodyguardLogic : ShootableLogic
             return;
         }
 
+        if(willKillDog) qteSlider.GetComponent<Slider>().value = (Time.realtimeSinceStartup - timeAtLevelBegin) / timeTillKill;
+
         if (Time.realtimeSinceStartup - timeAtLevelBegin > timeTillKillAnimationStart && willKillDog)
         {
             float timeSinceAnimationStart = Time.realtimeSinceStartup - timeAtLevelBegin;
@@ -62,6 +68,7 @@ public class BodyguardLogic : ShootableLogic
             dog.GetComponent<DogKill>().kill();
 
             isActive = false;
+            if (willKillDog) qteSlider.SetActive(false);
         }
     }
 }

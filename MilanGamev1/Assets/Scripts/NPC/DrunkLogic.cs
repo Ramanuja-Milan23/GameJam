@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DrunkLogic : ShootableLogic
 {
     [SerializeField] private GameObject dog;
     [SerializeField] private float timeTillKill = 0f;
     [SerializeField] private float timeTillKillAnimationStart = 0f;
+    [SerializeField] private GameObject qteSlider;
 
     private float timeAtLevelBegin = 0f;
     private bool isActive = false;
@@ -25,6 +27,7 @@ public class DrunkLogic : ShootableLogic
         {
             timeAtLevelBegin = Time.realtimeSinceStartup;
             isActive = true;
+            qteSlider.SetActive(true);
         }
     }
 
@@ -34,6 +37,7 @@ public class DrunkLogic : ShootableLogic
 
         isActive = false;
         isAnimating = true;
+        qteSlider.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,6 +52,8 @@ public class DrunkLogic : ShootableLogic
             return;
         }
 
+        qteSlider.GetComponent<Slider>().value = (Time.realtimeSinceStartup - timeAtLevelBegin) / timeTillKill;
+
         if(Time.realtimeSinceStartup - timeAtLevelBegin > timeTillKillAnimationStart)
         {
             float timeSinceAnimationStart = Time.realtimeSinceStartup - timeAtLevelBegin;
@@ -61,6 +67,7 @@ public class DrunkLogic : ShootableLogic
             dog.GetComponent<DogKill>().kill();
 
             isActive = false;
+            qteSlider.SetActive(false);
         }
     }
 }
