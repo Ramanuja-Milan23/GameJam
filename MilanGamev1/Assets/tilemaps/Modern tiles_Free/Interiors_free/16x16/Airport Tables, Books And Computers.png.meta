@@ -1,0 +1,2283 @@
+fileFormatVersion: 2
+guid: 92059242b1accac458f92e08abc2716f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 416
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95429aa413888c439567522c864384c
+      internalID: 1031163779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 434
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbc02bbb8cf7ee41a2acc1be0417c2c
+      internalID: -1990172678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 433
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9964968c7dbe9034da2f13d43793bacd
+      internalID: 589024744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 434
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa647135589a974b8486fcbe969f4c7
+      internalID: -130037316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 416
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26de7eab9febd724291726b8e85dc60b
+      internalID: 55624895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_5
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 434
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804ce405364becd4daf55838f60e2140
+      internalID: 136691029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 401
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc31e8a49d71cd44a8cb2338f8bf9cac
+      internalID: -1382474953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 402
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb8755f344f88943954696342743fcf
+      internalID: 1907286758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 354
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4255de426ebfda047986a4aff206de3c
+      internalID: 1900046550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_9
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 350
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf35b2774b3291448bd19b3c43e68731
+      internalID: -470544769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_10
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 413
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19757eef532c7534590197ece385b0f1
+      internalID: 24130567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 336
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcddc06af4c6ccf4eabc793d26a8735f
+      internalID: -731307352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 381
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8399e24bea94d4d41bc3e24e9c2bca36
+      internalID: 580228170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_13
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 354
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba3c43b265d0d345825095468ea5fec
+      internalID: 1998861684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_14
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 349
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3b5b5b322d6724ca56068b0b5cc5f7
+      internalID: -802542781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 322
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5421db30c4a010f4aaac1cd87199863e
+      internalID: -1927825552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 322
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b1da639c3ed5b4fb9320eeac65bd2a
+      internalID: -1358794586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_17
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 322
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2ba1ad1aec92147a77e04306530f8c
+      internalID: -514313380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 322
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778a87ff6f02d8548b3952b94eb7558a
+      internalID: 1398496137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 322
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d38def31c4c8e4bb6810127a3885dd
+      internalID: 548005190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_20
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 284
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5e30d059b14f24cae6813ef6dd8fd9
+      internalID: 232276749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 284
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad9125cd555fd24ca6ad3ed6a655fc8
+      internalID: 1147842350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_22
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 284
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abc51cac5cd6cb4cb60587f8d9f94ac
+      internalID: 57811167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 284
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6740b3cb5724f2840bb1cb0889da0a98
+      internalID: 283670571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_24
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 299
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b94b43198f703d4988d84c25e38aba3
+      internalID: -1557432044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 306
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f8f3c2c6082bf4780d4f1998e447ee
+      internalID: -1963210016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_26
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 292
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdb36cff8f32be4fa165536b19efae8
+      internalID: 1812162203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_27
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 244
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf387c64dcc48241b73aa11c5257469
+      internalID: -106911377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_28
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 277
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1dc064f8f54a54785d06846a1cbc64
+      internalID: 1389200685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_29
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 259
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfadca58fa9e29449138050e5b53ae9
+      internalID: 2074128169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_30
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 250
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8022cddd83d014bb61f99e652563be
+      internalID: 1612494740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_31
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 259
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2398b8e135051e54795c7633bf614977
+      internalID: -1937565679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_32
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 245
+        width: 38
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7af846f2d2ecc0449a1fa6e2e2a177e
+      internalID: -2140394990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_33
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 261
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809f0d729bc7c56459bd861722379749
+      internalID: 964469706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_34
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 261
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be503e30a982b4546bf05992d0560b0e
+      internalID: 2077810710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 230
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2edfff93e78f264da11db5c2507b419
+      internalID: 1666664849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab27ded192a67c41a932894a13c3503
+      internalID: -14496242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 242
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da8c290681eaa946950823649e5aadc
+      internalID: 155505352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_38
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 244
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ff58edcaeac85419e1e3c7fba2c888
+      internalID: 1564430840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_39
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 245
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6ca4738a1661d4e913d83f53cdbc10
+      internalID: -114789059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 201
+        width: 63
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23ee3e9f3826044b83973bc6e4d9eb3
+      internalID: -1923573972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_41
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 198
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb34ac4919b05241b71551123fa3659
+      internalID: -75375419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_42
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 210
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924e240e6f1c4d24080528b95204a626
+      internalID: 1175060990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 226
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573b4e9f6567a8b4f9073d0b21eeb6ac
+      internalID: 323209606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_44
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 212
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7309a1309ef51ff4f917e89e6bcfd6d8
+      internalID: -1460283561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_45
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 164
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed16f10d0cf8e2c4b8506d99d0fdac9b
+      internalID: -1620561908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 154
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a647f64ede9b38248bdf230cddfc9adf
+      internalID: 1524561506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_47
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 154
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a382253527d310646a678fee671d8387
+      internalID: 1925889944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 168
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86216aa892beb9b46aeed0fb3c717bbe
+      internalID: -1897339636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_49
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 178
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39aa57519e91b2429676b47bf95301e
+      internalID: -1772615062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_50
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 163
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d80a8834436cec4dbcff341bfc93ff6
+      internalID: -573737118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_51
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 146
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d735a3b0ecbd7674fade5105b0c04079
+      internalID: -1717572289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_52
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 138
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edf181e00c9a0446bb7ab0e5fb99deb
+      internalID: -1669995780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_53
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 115
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20649d1c8666036468d755318d9498a3
+      internalID: -588133884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_54
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 115
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4aea19521316aa419ad9a0e61d21187
+      internalID: -1277430720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_55
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 115
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43edf3e89ad8d6842ac8026ba68c23dc
+      internalID: 794952421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_56
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 139
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c51bd271d5f914b85ca0437319f638
+      internalID: -38119509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_57
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 130
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ace8a3ad5ae0b44add61fb3d7b7108
+      internalID: -456963882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_58
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 114
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596cac723c3e6044b89f1f207517f15f
+      internalID: 341931130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_59
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 123
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bd7b5172570cd40b3dae706bed1750
+      internalID: 1967879428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_60
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 106
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41030de9161e75e42b30da2504ee12f9
+      internalID: -565119945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_61
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 107
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53594e8fb7609c543945e4f218a1ce9f
+      internalID: 1211073052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_62
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 98
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1864ab216d0266b429b0a8148b59f77e
+      internalID: -1974914159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 74
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1f4a4a2618220498cb61553c5b9290
+      internalID: 127595457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_64
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 74
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c79ffd1e0139048bc177f559762d54
+      internalID: -1145162718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_65
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 4
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354e791b67814924a9422f653f9f4b1c
+      internalID: 154643864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_66
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 71
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b7d7ae1eb7b9f4685f62cb0897d337
+      internalID: 1886770660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_67
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 67
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d891cf6f48facff4c928eeb9cc06c8b2
+      internalID: -649023971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_68
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 34
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5beee6cc1c794141b774eeb49391ce9
+      internalID: 1545005854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_69
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 58
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3203232d278ad4b4e9f672eab7e07391
+      internalID: 853263384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_70
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 42
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca73afff3b67404399701adb045da77
+      internalID: 212125953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_71
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 41
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b689d40e23574d3498bf39d368384996
+      internalID: -985159434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_72
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 41
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffc842125e390d4db9d15f482e07701
+      internalID: -1202580389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d93079fa8e3f34ba9b7b82b22574f3
+      internalID: 1373443933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_74
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 25
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24451867991ac84ca26f9f58653258c
+      internalID: 1325162385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_75
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff952252d72084d4aa9306c0ff87a177
+      internalID: -1992179309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d735b02dd492ae245bbb5de745fc89e5
+      internalID: -698253399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_77
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 5
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c32d1bdb1f9374fbb0448044637836
+      internalID: 1744518998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_78
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 9
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9983801cf65a2e84398b799fe7b69535
+      internalID: -576046077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_79
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 434
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4848db62af72d9241a65262fe833a979
+      internalID: 1506006117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_80
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 386
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fe717779be9fb48835a56c1cd61626
+      internalID: 1235475997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 354
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0c61dcbfba82145a1da22ba4634e54
+      internalID: 746146080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_82
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 401
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a7eea52e4156e4ebc3c2155399ed64
+      internalID: -1271346289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_83
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 402
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a9ab9dc11b5c44880a6e5ebef3614d
+      internalID: -966568887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_84
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 155
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80a3c7d9bd88bd489ca4fc4e434300a
+      internalID: 170821713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_85
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 155
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c4fdf8e5464a147844a80f1a02dd73
+      internalID: -1077961114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 115
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa121fc865742b41a8c26dfc061a7d2
+      internalID: 332233859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_87
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 115
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5500456c1e04442469ea5385d6dbfa3f
+      internalID: -222311741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_88
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 67
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092ded37ea929034fad5ae1102f08828
+      internalID: -1920804331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_89
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 34
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35110bdb52637fc45872214d8d4d129d
+      internalID: 157131899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_90
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 34
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfee916f8334ded44beaa576604a1a8a
+      internalID: -1792291803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_91
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f3e87f7525ae345bec78de66b2e53c
+      internalID: 781075047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_92
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 9
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa477851ef20f64d9fbd44cbafc8fb2
+      internalID: -376322094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_93
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19a04817c520884480a702e3e02ae6f
+      internalID: 1821826006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_94
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7431ed6fac2f79b43a512fd635784eb5
+      internalID: -1621991435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_95
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 402
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c424e5f4d7ca89438fafe24830c5109
+      internalID: 858733029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_96
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 402
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66598f20240ebea4493721c5870213de
+      internalID: -618312528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airport Tables, Books And Computers_97
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 434
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682da77c7ec2a144fbf53c1abb6e8aa3
+      internalID: -1355079015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Airport Tables, Books And Computers_0: 1031163779
+      Airport Tables, Books And Computers_1: -1990172678
+      Airport Tables, Books And Computers_10: 24130567
+      Airport Tables, Books And Computers_11: -731307352
+      Airport Tables, Books And Computers_12: 580228170
+      Airport Tables, Books And Computers_13: 1998861684
+      Airport Tables, Books And Computers_14: -802542781
+      Airport Tables, Books And Computers_15: -1927825552
+      Airport Tables, Books And Computers_16: -1358794586
+      Airport Tables, Books And Computers_17: -514313380
+      Airport Tables, Books And Computers_18: 1398496137
+      Airport Tables, Books And Computers_19: 548005190
+      Airport Tables, Books And Computers_2: 589024744
+      Airport Tables, Books And Computers_20: 232276749
+      Airport Tables, Books And Computers_21: 1147842350
+      Airport Tables, Books And Computers_22: 57811167
+      Airport Tables, Books And Computers_23: 283670571
+      Airport Tables, Books And Computers_24: -1557432044
+      Airport Tables, Books And Computers_25: -1963210016
+      Airport Tables, Books And Computers_26: 1812162203
+      Airport Tables, Books And Computers_27: -106911377
+      Airport Tables, Books And Computers_28: 1389200685
+      Airport Tables, Books And Computers_29: 2074128169
+      Airport Tables, Books And Computers_3: -130037316
+      Airport Tables, Books And Computers_30: 1612494740
+      Airport Tables, Books And Computers_31: -1937565679
+      Airport Tables, Books And Computers_32: -2140394990
+      Airport Tables, Books And Computers_33: 964469706
+      Airport Tables, Books And Computers_34: 2077810710
+      Airport Tables, Books And Computers_35: 1666664849
+      Airport Tables, Books And Computers_36: -14496242
+      Airport Tables, Books And Computers_37: 155505352
+      Airport Tables, Books And Computers_38: 1564430840
+      Airport Tables, Books And Computers_39: -114789059
+      Airport Tables, Books And Computers_4: 55624895
+      Airport Tables, Books And Computers_40: -1923573972
+      Airport Tables, Books And Computers_41: -75375419
+      Airport Tables, Books And Computers_42: 1175060990
+      Airport Tables, Books And Computers_43: 323209606
+      Airport Tables, Books And Computers_44: -1460283561
+      Airport Tables, Books And Computers_45: -1620561908
+      Airport Tables, Books And Computers_46: 1524561506
+      Airport Tables, Books And Computers_47: 1925889944
+      Airport Tables, Books And Computers_48: -1897339636
+      Airport Tables, Books And Computers_49: -1772615062
+      Airport Tables, Books And Computers_5: 136691029
+      Airport Tables, Books And Computers_50: -573737118
+      Airport Tables, Books And Computers_51: -1717572289
+      Airport Tables, Books And Computers_52: -1669995780
+      Airport Tables, Books And Computers_53: -588133884
+      Airport Tables, Books And Computers_54: -1277430720
+      Airport Tables, Books And Computers_55: 794952421
+      Airport Tables, Books And Computers_56: -38119509
+      Airport Tables, Books And Computers_57: -456963882
+      Airport Tables, Books And Computers_58: 341931130
+      Airport Tables, Books And Computers_59: 1967879428
+      Airport Tables, Books And Computers_6: -1382474953
+      Airport Tables, Books And Computers_60: -565119945
+      Airport Tables, Books And Computers_61: 1211073052
+      Airport Tables, Books And Computers_62: -1974914159
+      Airport Tables, Books And Computers_63: 127595457
+      Airport Tables, Books And Computers_64: -1145162718
+      Airport Tables, Books And Computers_65: 154643864
+      Airport Tables, Books And Computers_66: 1886770660
+      Airport Tables, Books And Computers_67: -649023971
+      Airport Tables, Books And Computers_68: 1545005854
+      Airport Tables, Books And Computers_69: 853263384
+      Airport Tables, Books And Computers_7: 1907286758
+      Airport Tables, Books And Computers_70: 212125953
+      Airport Tables, Books And Computers_71: -985159434
+      Airport Tables, Books And Computers_72: -1202580389
+      Airport Tables, Books And Computers_73: 1373443933
+      Airport Tables, Books And Computers_74: 1325162385
+      Airport Tables, Books And Computers_75: -1992179309
+      Airport Tables, Books And Computers_76: -698253399
+      Airport Tables, Books And Computers_77: 1744518998
+      Airport Tables, Books And Computers_78: -576046077
+      Airport Tables, Books And Computers_79: 1506006117
+      Airport Tables, Books And Computers_8: 1900046550
+      Airport Tables, Books And Computers_80: 1235475997
+      Airport Tables, Books And Computers_81: 746146080
+      Airport Tables, Books And Computers_82: -1936378540
+      Airport Tables, Books And Computers_83: 359421652
+      Airport Tables, Books And Computers_84: -1271346289
+      Airport Tables, Books And Computers_85: -966568887
+      Airport Tables, Books And Computers_86: 170821713
+      Airport Tables, Books And Computers_87: -1077961114
+      Airport Tables, Books And Computers_88: 332233859
+      Airport Tables, Books And Computers_89: -222311741
+      Airport Tables, Books And Computers_9: -470544769
+      Airport Tables, Books And Computers_90: -1920804331
+      Airport Tables, Books And Computers_91: 157131899
+      Airport Tables, Books And Computers_92: -1792291803
+      Airport Tables, Books And Computers_93: 781075047
+      Airport Tables, Books And Computers_94: -376322094
+      Airport Tables, Books And Computers_95: 1821826006
+      Airport Tables, Books And Computers_96: -1621991435
+      Airport Tables, Books And Computers_97: 858733029
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
