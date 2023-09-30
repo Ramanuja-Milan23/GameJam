@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
+    [SerializeField] private GameObject trigger;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,7 @@ public class OpenDoor : MonoBehaviour
         if (levelID == "lvl_4_pass")
         {
             GetComponent<SpriteRenderer>().enabled = false;
+            trigger.SetActive(true);
         }
     }
 

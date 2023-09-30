@@ -80,8 +80,6 @@ public class InventoryManager : MonoBehaviour
         {
             inventory.Remove("GlassShard");
 
-            Debug.Log("GlassShard");
-
             Vector2 shootDir = GetComponent<Movement>().faceDir;
 
             RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
@@ -96,13 +94,13 @@ public class InventoryManager : MonoBehaviour
         {
             Vector2 shootDir = GetComponent<Movement>().faceDir;
 
-            Debug.Log("Gun");
-
             RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
-
+            
             if (shoot.collider != null)
             {
-                shoot.collider.GetComponent<Shootable>().shot();
+                if (shoot.collider.GetComponent<Shootable>() != null) shoot.collider.GetComponent<Shootable>().shot();
+                else if (shoot.collider.GetComponent<ShootableLogic>() != null) shoot.collider.GetComponent<ShootableLogic>().kill();
+                else Debug.Log("Error:" + shoot.collider.name);
             }
         }
 

@@ -8,6 +8,7 @@ public class BroadcasterOnTrigger : MonoBehaviour
     [SerializeField] private string broadcastOnTrigger;
     [SerializeField] private List<GameObject> broadcastScope;
     [SerializeField] private string colliderName = "Player";
+    [SerializeField] private bool isScriptOnly = false;
 
     private bool hasBroadcasted = false;
 
@@ -20,6 +21,8 @@ public class BroadcasterOnTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (hasBroadcasted) return;
+        if (string.IsNullOrEmpty(broadcastMethod)) return;
+        if (isScriptOnly) return;
 
         if (collision.name == colliderName)
         {
@@ -35,6 +38,7 @@ public class BroadcasterOnTrigger : MonoBehaviour
     public void trigger()
     {
         if (hasBroadcasted) return;
+        if (string.IsNullOrEmpty(broadcastMethod)) return;
 
         foreach (GameObject go in broadcastScope)
         {

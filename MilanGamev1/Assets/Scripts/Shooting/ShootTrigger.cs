@@ -16,7 +16,7 @@ public class ShootTrigger : Shootable
 
     public override void shot()
     {
-        broadcastScope.BroadcastMessage(broadcastMethod, broadcastOnTrigger);
+        if(!string.IsNullOrEmpty(broadcastMethod)) broadcastScope.BroadcastMessage(broadcastMethod, broadcastOnTrigger);
 
         GetComponent<ShootableLogic>().kill();
 

@@ -10,7 +10,7 @@ public class CameraL4 : MonoBehaviour
     [SerializeField] private string levelID_active;
     [SerializeField] private string levelID_deactive;
 
-    private bool isActive = false;
+    [SerializeField] private bool isActive = false;
 
     // Start is called before the first frame update
     void Start()

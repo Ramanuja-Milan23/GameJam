@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
     [SerializeField] private GameObject dialogArea;
+    [SerializeField] private GameObject dog;
     [SerializeField] private string playerPrompt;
     [SerializeField] private string expectedInput;
 
-    private bool hasSaidDialog = false;
     private bool isActive = false;
     private string input = string.Empty;
+    private bool pressedR = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +21,9 @@ public class InputHandler : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.name == "Player" && !hasSaidDialog)
+        if (collision.name == "Player" && pressedR)
         {
             isActive = true;
 
@@ -34,7 +36,9 @@ public class InputHandler : MonoBehaviour
     // Fixed Update is called once per frame
     void Update()
     {
-        if(isActive)
+        pressedR = Input.GetKey(KeyCode.R);
+
+        if (isActive)
         {
             foreach (char c in Input.inputString)
             {
@@ -44,9 +48,19 @@ public class InputHandler : MonoBehaviour
                 }
             }
 
-            if (input == playerPrompt)
+            dialogArea.GetComponentInChildren<TMP_Text>().SetText(playerPrompt + input);
+
+            if (input == expectedInput)
             {
                 GetComponent<BroadcasterOnTrigger>().trigger();
+                dialogArea.SetActive(false);
+                isActive = false;
+            }
+            else if(input.Length == expectedInput.Length)
+            {
+                // Call security??
+
+                dog.GetComponent<DogKill>().kill();
             }
         }
     }

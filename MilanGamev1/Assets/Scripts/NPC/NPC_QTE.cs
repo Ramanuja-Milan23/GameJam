@@ -45,6 +45,7 @@ public class NPC_QTE : MonoBehaviour
 
         if (Time.realtimeSinceStartup - timeAtLevelBegin > timeTillKill && qteSlider.activeSelf)
         {
+            dog.GetComponent<DogKill>().kill();
             qteSlider.SetActive(false);
             isActive = false;
         }
