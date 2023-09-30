@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    [SerializeField] private List<GameObject> Pickables;
     [SerializeField] private float radius = 0f;
 
     private List<string> inventory;
@@ -20,16 +21,26 @@ public class InventoryManager : MonoBehaviour
         // Add nearby objects to inventory if R is pressed
         if (Input.GetKeyDown(KeyCode.R))
         {
-            // get all nearby pickable objects
-            var nearbyObjects = Physics2D.OverlapCircleAll(transform.position, radius, 0);
-
-            if (nearbyObjects != null)
+            if (Pickables != null)
             {
                 if (Input.GetKeyDown(KeyCode.R))
                 {
-                    foreach (var nearbyObject in nearbyObjects) { inventory.Add(nearbyObject.name); }
+                    foreach (var nearbyObject in Pickables)
+                    {
+                        if (Vector2.Distance(nearbyObject.transform.position, transform.position) > radius) continue;
+
+                        Debug.Log("Picked Up " + nearbyObject.name);
+
+                        if(inventory == null) inventory = new List<string> { nearbyObject.name };
+                        else inventory.Add(nearbyObject.name);
+                    }
                 }
             }
+        }
+        // empty inventory
+        else if(inventory == null)
+        {
+            return;
         }
         // throw glassShard in looking direction if E is pressed
         else if(Input.GetKeyDown(KeyCode.E) && inventory.Contains("GlassShard"))
@@ -37,6 +48,8 @@ public class InventoryManager : MonoBehaviour
             Vector2 shootDir = GetComponent<Movement>().faceDir;
 
             RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
+
+            Debug.Log("Hit " + shoot.collider.name);
 
             if (shoot.collider != null)
             {

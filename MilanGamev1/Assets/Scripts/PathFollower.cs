@@ -28,18 +28,24 @@ public class PathFollower : MonoBehaviour
     void Start()
     {
         faceDir = Vector2.down;
+        receivedMessages = new List<string>();
     }
 
     public void getBroadcastTrigger(string broadCastMessage)
     {
         if(isWaitingForTrigger)
         {
-            if(waitForMessage == broadCastMessage) this.isWaitingForTrigger = false;
-            this.actualSpeed = speed;
+            if (waitForMessage == broadCastMessage)
+            {
+                isWaitingForTrigger = false;
+                actualSpeed = speed;
+
+                receivedMessages.Add(broadCastMessage);
+            }
         }
-        else
+        else if(!string.IsNullOrEmpty(broadCastMessage))
         {
-            this.receivedMessages.Add(broadCastMessage);
+            receivedMessages.Add(broadCastMessage);
         }
     }
 
@@ -63,7 +69,7 @@ public class PathFollower : MonoBehaviour
             return;
         }
 
-        if(!string.IsNullOrEmpty(list[currentNode].triggerOnMessage))
+        if(!string.IsNullOrEmpty(list[currentNode].triggerOnMessage) && !receivedMessages.Contains(list[currentNode].triggerOnMessage))
         {
             isWaitingForTrigger = true;
             waitForMessage = list[currentNode].triggerOnMessage;
@@ -83,13 +89,10 @@ public class PathFollower : MonoBehaviour
             if (currentNode + 1 < list.Length)
             {
                 // if it was broadcast then pause
-                if (!string.IsNullOrEmpty(list[currentNode].pauseOnMessage) && receivedMessages != null)
+                if (!string.IsNullOrEmpty(list[currentNode].pauseOnMessage) && receivedMessages.Contains(list[currentNode].pauseOnMessage))
                 {
-                    if (receivedMessages.Contains(list[currentNode].pauseOnMessage))
-                    {
-                        isRunning = false;
-                        actualSpeed = 0f;
-                    }
+                    isRunning = false;
+                    actualSpeed = 0f;
                 }
                 else
                 {
