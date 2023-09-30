@@ -3526,7 +3526,19 @@ MonoBehaviour:
   animator: {fileID: 0}
   startDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 516187242}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startDeath
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &516187241
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29575,7 +29587,19 @@ MonoBehaviour:
   animator: {fileID: 0}
   startDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1159765769}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startDeath
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1159765768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31638,7 +31662,19 @@ MonoBehaviour:
   animator: {fileID: 0}
   startDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1546071532}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startDeath
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1546071531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32048,6 +32084,7 @@ GameObject:
   - component: {fileID: 1623263547}
   - component: {fileID: 1623263549}
   - component: {fileID: 1623263548}
+  - component: {fileID: 1623263550}
   m_Layer: 0
   m_Name: Tile Base Next Lvls
   m_TagString: Untagged
@@ -40013,6 +40050,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1623263550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623263546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b1499e181458042a2637a4dd9aec18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1644899023
 GameObject:
   m_ObjectHideFlags: 0
@@ -46072,6 +46124,63 @@ Transform:
   - {fileID: 1907513052}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4343929645149967849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 186.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042208482295939136, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_Name
+      value: SOHAM DO SUMMAT with this
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
 --- !u!1001 &7597511782304418228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46151,3 +46260,4 @@ SceneRoots:
   - {fileID: 162804747}
   - {fileID: 2705172}
   - {fileID: 239380027}
+  - {fileID: 4343929645149967849}
