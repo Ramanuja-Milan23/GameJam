@@ -34,7 +34,7 @@ public class InventoryManager : MonoBehaviour
     {
         if(firstPickup)
         {
-            tutorialText.SetText("Press R to pickup items");
+            tutorialText.SetText("Press R to pickup");
         }
 
         // Add nearby objects to inventory if R is pressed
@@ -54,7 +54,7 @@ public class InventoryManager : MonoBehaviour
 
                 if(firstPickup)
                 {
-                    tutorialText.SetText("Press E to use item");
+                    tutorialText.SetText("Press E to shoot/throw");
                 }
 
                 firstPickup = false;
@@ -68,12 +68,23 @@ public class InventoryManager : MonoBehaviour
         // throw glassShard in looking direction if E is pressed
         else if(Input.GetKeyDown(KeyCode.E) && inventory.Contains("GlassShard"))
         {
+            inventory.Remove("GlassShard");
+
             Vector2 shootDir = GetComponent<Movement>().faceDir;
 
             RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
 
-            // DEBUG
-            Debug.Log("Hit " + shoot.collider.name);
+            if (shoot.collider != null)
+            {
+                shoot.collider.GetComponent<Shootable>().shot();
+            }
+        }
+        // shoot in looking direction if E is pressed
+        else if (Input.GetKeyDown(KeyCode.E) && inventory.Contains("Gun"))
+        {
+            Vector2 shootDir = GetComponent<Movement>().faceDir;
+
+            RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
 
             if (shoot.collider != null)
             {

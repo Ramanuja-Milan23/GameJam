@@ -6,6 +6,8 @@ public class DogKill : MonoBehaviour
 {
     [SerializeField] private List<string> names;
 
+    public bool isDogDead = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,8 @@ public class DogKill : MonoBehaviour
     public void kill()
     {
         Debug.Log("Killed Dog");
+
+        isDogDead = true;
 
         // disable movement
         transform.GetComponent<PathFollower>().enabled = false;
