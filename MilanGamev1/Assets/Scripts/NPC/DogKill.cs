@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DogKill : MonoBehaviour
 {
     [SerializeField] private List<string> names;
 
     public bool isDogDead = false;
+    public UnityEvent dogDied;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class DogKill : MonoBehaviour
         transform.GetComponent<PathFollower>().enabled = false;
 
         // TODO: Do kill animations
+        dogDied.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
