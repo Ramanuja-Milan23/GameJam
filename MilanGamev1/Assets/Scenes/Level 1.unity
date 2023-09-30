@@ -27908,6 +27908,7 @@ GameObject:
   - component: {fileID: 938589227}
   - component: {fileID: 938589228}
   - component: {fileID: 938589229}
+  - component: {fileID: 938589230}
   m_Layer: 0
   m_Name: BodyguardB
   m_TagString: Untagged
@@ -27999,6 +28000,36 @@ MonoBehaviour:
   timeTillKillAnimationStart: 0
   willKillDog: 0
   isActive: 0
+  startDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 938589230}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startDeath
+          m_BoolArgument: 0
+        m_CallState: 2
+  startKill:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 938589230}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startKill
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &938589228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28059,6 +28090,27 @@ MonoBehaviour:
   broadcastMethod: getBroadcastTrigger
   broadcastOnTrigger: lvl_3_pass
   broadcastScope: {fileID: 2023121778}
+--- !u!95 &938589230
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938589224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0033909a3937a3b4aa6df70d3c05d910, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &950168941
 GameObject:
   m_ObjectHideFlags: 0
@@ -30200,6 +30252,7 @@ GameObject:
   - component: {fileID: 1590346711}
   - component: {fileID: 1590346712}
   - component: {fileID: 1590346713}
+  - component: {fileID: 1590346714}
   m_Layer: 0
   m_Name: BodyguardA
   m_TagString: Untagged
@@ -30291,6 +30344,36 @@ MonoBehaviour:
   timeTillKillAnimationStart: 8
   willKillDog: 1
   isActive: 0
+  startDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1590346714}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startDeath
+          m_BoolArgument: 0
+        m_CallState: 2
+  startKill:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1590346714}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: startKill
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1590346712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30351,6 +30434,27 @@ MonoBehaviour:
   broadcastMethod: getBroadcastTrigger
   broadcastOnTrigger: lvl_3_pass
   broadcastScope: {fileID: 2023121778}
+--- !u!95 &1590346714
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590346708}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aac7c2aa16c3ac04a955e1904482e1eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1595628665
 GameObject:
   m_ObjectHideFlags: 0
