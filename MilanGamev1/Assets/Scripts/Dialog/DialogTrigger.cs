@@ -13,6 +13,7 @@ public class DialogTrigger : MonoBehaviour
 
     private bool hasSaidDialog = false;
     private int currentDialog = 0;
+    private bool isActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class DialogTrigger : MonoBehaviour
             dialogArea.GetComponentInChildren<TMP_Text>().SetText(text);
 
             hasSaidDialog = true;
+            isActive = true;
         }
     }
 
@@ -47,25 +49,34 @@ public class DialogTrigger : MonoBehaviour
         dialogArea.GetComponentInChildren<TMP_Text>().SetText(text);
 
         hasSaidDialog = true;
+        isActive = true;
     }
 
     // Fixed Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && isActive)
         {
-            if(currentDialog + 1 < dialogIDs.Count)
+            if (currentDialog + 1 < dialogIDs.Count)
             {
                 currentDialog++;
 
-                if (currentDialog == dialogs.dialogs.Count) { dialogArea.SetActive(false); }
+                if (currentDialog == dialogs.dialogs.Count)
+                {
+                    isActive = false;
+                    dialogArea.SetActive(false);
+                }
                 else
                 {
                     var text = dialogs.dialogs[dialogIDs[currentDialog]];
                     dialogArea.GetComponentInChildren<TMP_Text>().SetText(text);
                 }
             }
-            else dialogArea.SetActive(false);
+            else
+            {
+                isActive = false;
+                dialogArea.SetActive(false);
+            }
         }
     }
 }

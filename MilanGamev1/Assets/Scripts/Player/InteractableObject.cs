@@ -12,6 +12,8 @@ public class InteractableObject : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        Debug.Log(collision.name + ": " + Input.GetKey(KeyCode.R));
+
         if (collision.name == "Player" && Input.GetKey(KeyCode.R))
         {
             GetComponent<DialogTrigger>().startDialog();

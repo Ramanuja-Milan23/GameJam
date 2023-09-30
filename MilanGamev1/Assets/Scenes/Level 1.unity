@@ -1426,16 +1426,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 61, y: -5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 24
-      m_TileSpriteIndex: 24
-      m_TileMatrixIndex: 2
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 42, y: -4, z: 0}
     second:
       serializedVersion: 2
@@ -1806,7 +1796,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 87ba755796604ea42b0de7db52826eb2, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: c373eb3666ab6ec469532a18512f7746, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: bbd981f033e1d56428f175bcbd183a9f, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7df6966a7c16b994ca6633f102801453, type: 2}
@@ -1871,7 +1861,7 @@ Tilemap:
     m_Data: {fileID: 794952421, guid: 92059242b1accac458f92e08abc2716f, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1907286758, guid: 92059242b1accac458f92e08abc2716f, type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: -1990172678, guid: 92059242b1accac458f92e08abc2716f, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 245318014, guid: ed5090cafa52e644a81b2fd6208a4c5c, type: 3}
@@ -1924,7 +1914,7 @@ Tilemap:
       e31: 8.07e-43
       e32: 8.04e-43
       e33: 8.04e-43
-  - m_RefCount: 68
+  - m_RefCount: 67
     m_Data:
       e00: 1
       e01: 0
@@ -1945,7 +1935,7 @@ Tilemap:
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
-  - m_RefCount: 68
+  - m_RefCount: 67
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -3280,7 +3270,7 @@ GameObject:
   - component: {fileID: 497176620}
   - component: {fileID: 497176619}
   m_Layer: 0
-  m_Name: Painting
+  m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3330,7 +3320,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3373,8 +3363,8 @@ MonoBehaviour:
   dialogArea: {fileID: 1421195597}
   dialogs: {fileID: 1923597225}
   dialogIDs:
-  - painting_1
-  - painting_2
+  - TV_1
+  - TV_2
   isTriggeredDialog: 0
 --- !u!1 &516187236
 GameObject:
@@ -41036,8 +41026,8 @@ MonoBehaviour:
     - intro_1
     - intro_2
     - shop_1
-    - painting_1
-    - painting_2
+    - TV_1
+    - TV_2
     - passcode_1
     - passcode_2
     m_values:
