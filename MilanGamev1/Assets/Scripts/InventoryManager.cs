@@ -19,7 +19,7 @@ public class InventoryManager : MonoBehaviour
         
     }
 
-    public void levelBeginBroadcast(string levelID)
+    public void getBroadcastTrigger(string levelID)
     {
         // if level 2, then start timer
         if (levelID == "lvl_2" && !isLvl2)

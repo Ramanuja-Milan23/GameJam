@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768ece9a09bfe3640a11ce849cfe7003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerOnMessage: PassLvl2
+  triggerOnMessage: lvl2_pass
   pauseOnMessage: 
 --- !u!1 &399960493
 GameObject:
@@ -2091,7 +2091,7 @@ Transform:
   m_GameObject: {fileID: 667205052}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.53, y: 9.83, z: 0}
+  m_LocalPosition: {x: -1.73, y: 9.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25635,7 +25635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   broadcastMethod: getBroadcastTrigger
-  broadcastOnTrigger: PassLvl2
+  broadcastOnTrigger: lvl2_pass
   broadcastScope: {fileID: 2023121778}
 --- !u!61 &1200392905
 BoxCollider2D:
@@ -25695,7 +25695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dog: {fileID: 2023121778}
-  timeBeforeKill: 5
+  timeTillKill: 10
+  timeTillKillAnimationStart: 8
 --- !u!114 &1200392907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27007,7 +27008,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastMethod: getBroadcastTrigger
   broadcastOnTrigger: lvl_1_pass
-  broadcastScope: {fileID: 162804746}
+  broadcastScope:
+  - {fileID: 162804746}
   colliderName: Player
 --- !u!1 &1712383665
 GameObject:
@@ -27335,7 +27337,7 @@ MonoBehaviour:
   Pickables:
   - {fileID: 1286400081}
   radius: 10
-  tutorialText: {fileID: 0}
+  tutorialText: {fileID: 66849268}
 --- !u!1 &1789500615
 GameObject:
   m_ObjectHideFlags: 0
@@ -27896,7 +27898,7 @@ GameObject:
   - component: {fileID: 2043131454}
   - component: {fileID: 2043131453}
   - component: {fileID: 2043131456}
-  - component: {fileID: 2043131457}
+  - component: {fileID: 2043131459}
   - component: {fileID: 2043131458}
   m_Layer: 2
   m_Name: lvl 12
@@ -28009,22 +28011,6 @@ MonoBehaviour:
   faceDirOnEnter: {x: 0, y: 1}
   prev: 0
   next: 2
---- !u!114 &2043131457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043131451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f80539400176f47b856247064c2b89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  broadcastMethod: levelBeginBroadcast
-  broadcastOnTrigger: lvl_2
-  broadcastScope: {fileID: 1712383665}
-  colliderName: Player
 --- !u!114 &2043131458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28039,8 +28025,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastMethod: skipCurrentNode
   broadcastOnTrigger: 
-  broadcastScope: {fileID: 2023121778}
+  broadcastScope:
+  - {fileID: 2023121778}
   colliderName: Dog
+--- !u!114 &2043131459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043131451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f80539400176f47b856247064c2b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastMethod: getBroadcastTrigger
+  broadcastOnTrigger: lvl_2
+  broadcastScope:
+  - {fileID: 1763530628}
+  - {fileID: 1712383665}
+  colliderName: Player
 --- !u!1 &2045555743
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,11 @@ public class ShootTrigger : Shootable
 
     public override void shot()
     {
-        broadcastScope.BroadcastMessage("getBroadcastTrigger", broadcastOnTrigger);
+        broadcastScope.BroadcastMessage(broadcastMethod, broadcastOnTrigger);
+
+        ;
+
+        // Do death animations
     }
 
     // Update is called once per frame

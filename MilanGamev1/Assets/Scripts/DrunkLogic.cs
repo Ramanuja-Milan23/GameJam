@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DrunkLogic : MonoBehaviour
+public class DrunkLogic : ShootableLogic
 {
     [SerializeField] private GameObject dog;
-    [SerializeField] private float timeBeforeKill = 0f;
+    [SerializeField] private float timeTillKill = 0f;
+    [SerializeField] private float timeTillKillAnimationStart = 0f;
 
     private float timeAtLevelBegin = 0f;
     private bool isActive = false;
+    private bool isAnimating = false;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,7 @@ public class DrunkLogic : MonoBehaviour
 
     }
 
-    public void levelBeginBroadcast(string levelID)
+    public void getBroadcastTrigger(string levelID)
     {
         // if level 2, then start timer
         if(levelID == "lvl_2" && !isActive)
@@ -26,10 +28,34 @@ public class DrunkLogic : MonoBehaviour
         }
     }
 
+    public override void kill()
+    {
+        // TODO: start kill animation?
+
+        isActive = false;
+        isAnimating = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(Time.realtimeSinceStartup - timeAtLevelBegin > timeBeforeKill && isActive)
+        if (!isActive && !isAnimating) return;
+
+        if(isAnimating)
+        {
+            // TODO: do dying animation
+
+            return;
+        }
+
+        if(Time.realtimeSinceStartup - timeAtLevelBegin > timeTillKillAnimationStart)
+        {
+            float timeSinceAnimationStart = Time.realtimeSinceStartup - timeAtLevelBegin;
+
+            // TODO: do slap animation
+        }
+
+        if (Time.realtimeSinceStartup - timeAtLevelBegin > timeTillKill)
         {
             // kill the dog
             dog.GetComponent<DogKill>().kill();
