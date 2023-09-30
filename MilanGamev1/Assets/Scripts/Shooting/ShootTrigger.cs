@@ -18,7 +18,7 @@ public class ShootTrigger : Shootable
     {
         broadcastScope.BroadcastMessage(broadcastMethod, broadcastOnTrigger);
 
-        ;
+        GetComponent<ShootableLogic>().kill();
 
         // Do death animations
     }
