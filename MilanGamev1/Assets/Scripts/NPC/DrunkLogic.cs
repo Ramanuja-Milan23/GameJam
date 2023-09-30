@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
+
 
 public class DrunkLogic : ShootableLogic
 {
@@ -9,10 +11,14 @@ public class DrunkLogic : ShootableLogic
     [SerializeField] private float timeTillKill = 0f;
     [SerializeField] private float timeTillKillAnimationStart = 0f;
     [SerializeField] private GameObject qteSlider;
+    
+    public Animator animator;
 
     private float timeAtLevelBegin = 0f;
     private bool isActive = false;
     private bool isAnimating = false;
+    public UnityEvent startDeath;
+    public UnityEvent startKill;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +40,9 @@ public class DrunkLogic : ShootableLogic
     public override void kill()
     {
         // TODO: start kill animation?
+        // Kill Anim here
+        startKill.Invoke();
+
 
         isActive = false;
         isAnimating = true;
@@ -48,6 +57,7 @@ public class DrunkLogic : ShootableLogic
         if(isAnimating)
         {
             // TODO: do dying animation
+            startDeath.Invoke();
 
             return;
         }
@@ -59,6 +69,9 @@ public class DrunkLogic : ShootableLogic
             float timeSinceAnimationStart = Time.realtimeSinceStartup - timeAtLevelBegin;
 
             // TODO: do slap animation
+            startKill.Invoke();
+            
+            
         }
 
         if (Time.realtimeSinceStartup - timeAtLevelBegin > timeTillKill)
