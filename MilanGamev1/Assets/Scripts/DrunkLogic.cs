@@ -8,6 +8,7 @@ public class DrunkLogic : MonoBehaviour
     [SerializeField] private float timeBeforeKill = 0f;
 
     private float timeAtLevelBegin = 0f;
+    private bool isActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -15,22 +16,25 @@ public class DrunkLogic : MonoBehaviour
 
     }
 
-    public void levelBeginBroadcast(int levelID)
+    public void levelBeginBroadcast(string levelID)
     {
         // if level 2, then start timer
-        if(levelID == 1)
+        if(levelID == "lvl_2" && !isActive)
         {
             timeAtLevelBegin = Time.realtimeSinceStartup;
+            isActive = true;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timeAtLevelBegin - Time.realtimeSinceStartup > timeBeforeKill)
+        if(Time.realtimeSinceStartup - timeAtLevelBegin > timeBeforeKill && isActive)
         {
             // kill the dog
-            GetComponent<DogKill>().kill();
+            dog.GetComponent<DogKill>().kill();
+
+            isActive = false;
         }
     }
 }
