@@ -14,7 +14,7 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        transform.position = teleportObject.transform.position;
+        if(collision.name == "Player") collision.transform.position = teleportObject.transform.position;
     }
 
     // Update is called once per frame
