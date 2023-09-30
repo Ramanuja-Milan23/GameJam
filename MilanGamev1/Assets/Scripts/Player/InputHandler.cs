@@ -10,7 +10,6 @@ public class InputHandler : MonoBehaviour
     [SerializeField] private string expectedInput;
 
     private bool hasSaidDialog = false;
-    private int currentDialog = 0;
     private bool isActive = false;
     private string input = string.Empty;
 
@@ -24,7 +23,6 @@ public class InputHandler : MonoBehaviour
     {
         if (collision.name == "Player" && !hasSaidDialog)
         {
-            currentDialog = 0;
             isActive = true;
 
             dialogArea.SetActive(true);

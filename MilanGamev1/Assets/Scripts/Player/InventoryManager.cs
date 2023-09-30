@@ -9,7 +9,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private float radius = 0f;
     [SerializeField] private TMP_Text tutorialText;
 
-    private List<string> inventory;
+    public List<string> inventory;
     private bool firstPickup = false;
     private bool isLvl2 = false;
 
@@ -19,9 +19,9 @@ public class InventoryManager : MonoBehaviour
         ;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.name == "Shop")
+        if(collision.name == "Shop" && Input.GetKey(KeyCode.R))
         {
             inventory.Add("Gun");
         }
@@ -58,8 +58,6 @@ public class InventoryManager : MonoBehaviour
                 {
                     if (Vector2.Distance(nearbyObject.transform.position, transform.position) > radius) continue;
 
-                    Debug.Log("Picked Up " + nearbyObject.name);
-
                     if(inventory == null) inventory = new List<string> { nearbyObject.name };
                     else inventory.Add(nearbyObject.name);
                 }
@@ -82,6 +80,8 @@ public class InventoryManager : MonoBehaviour
         {
             inventory.Remove("GlassShard");
 
+            Debug.Log("GlassShard");
+
             Vector2 shootDir = GetComponent<Movement>().faceDir;
 
             RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
@@ -95,6 +95,8 @@ public class InventoryManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.E) && inventory.Contains("Gun"))
         {
             Vector2 shootDir = GetComponent<Movement>().faceDir;
+
+            Debug.Log("Gun");
 
             RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
 
