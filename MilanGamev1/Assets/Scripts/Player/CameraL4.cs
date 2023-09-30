@@ -7,6 +7,8 @@ public class CameraL4 : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float x_clamp_left = 0f;
     [SerializeField] private float x_clamp_right = 0f;
+    [SerializeField] private string levelID_active;
+    [SerializeField] private string levelID_deactive;
 
     private bool isActive = false;
 
@@ -19,11 +21,11 @@ public class CameraL4 : MonoBehaviour
     public void getBroadcastTrigger(string levelID)
     {
         // if level 2, then start timer
-        if (levelID == "lvl_4" && !isActive)
+        if (levelID == levelID_active && !isActive)
         {
             isActive = true;
         }
-        else if (levelID == "lvl_5" && isActive)
+        else if (levelID == levelID_deactive && isActive)
         {
             isActive = false;
         }
