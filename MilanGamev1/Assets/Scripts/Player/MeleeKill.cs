@@ -15,14 +15,16 @@ public class MeleeKill : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKey(KeyCode.F))
         {
-            Collider2D collider = Physics2D.OverlapCircle(transform.position, meleeRange, 2);
+            Collider2D collider = Physics2D.OverlapCircle(transform.position, meleeRange);
 
             if (collider != null)
             {
+                Debug.Log(collider.name);
+
                 // kill the guy
-                collider.GetComponent<ShootableLogic>().kill();
+                if(collider.isActiveAndEnabled) collider.GetComponent<ShootableLogic>().kill();
             }
         }
     }
