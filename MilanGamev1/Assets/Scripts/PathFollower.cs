@@ -152,16 +152,18 @@ public class PathFollower : MonoBehaviour
             timeSinceCurrentNodeStart = 0f;
         }
 
-
-        //animator Segment
-        animator.SetFloat("Horizontal", faceDir.x * actualSpeed);
-        animator.SetFloat("Vertical", faceDir.y * actualSpeed);
-        animator.SetFloat("Speed", actualSpeed);
-        
-        if (speed > thresholdSpeed)
+        if(animator != null)
         {
-            animator.SetFloat("prevHorizontal", faceDir.x * actualSpeed);
-            animator.SetFloat("prevVertical", faceDir.y * actualSpeed);
+            //animator Segment
+            animator.SetFloat("Horizontal", faceDir.x * actualSpeed);
+            animator.SetFloat("Vertical", faceDir.y * actualSpeed);
+            animator.SetFloat("Speed", actualSpeed);
+
+            if (speed > thresholdSpeed)
+            {
+                animator.SetFloat("prevHorizontal", faceDir.x * actualSpeed);
+                animator.SetFloat("prevVertical", faceDir.y * actualSpeed);
+            }
         }
 
         // Draw the path
