@@ -42,8 +42,6 @@ public class BodyguardLogic : ShootableLogic
 
         isActive = false;
         isAnimating = true;
-
-        GetComponent<NPC_Status>().isAlive = false;
     }
 
     // Update is called once per frame

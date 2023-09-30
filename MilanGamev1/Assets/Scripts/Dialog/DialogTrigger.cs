@@ -9,7 +9,6 @@ public class DialogTrigger : MonoBehaviour
     [SerializeField] private GameObject dialogArea;
     [SerializeField] private Dialogs dialogs;
     [SerializeField] private List<string> dialogIDs;
-    [SerializeField] public bool isTriggeredDialog = true;
 
     private bool hasSaidDialog = false;
     private int currentDialog = 0;
@@ -22,7 +21,7 @@ public class DialogTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Player" && !hasSaidDialog && isTriggeredDialog)
+        if (collision.name == "Player" && !hasSaidDialog)
         {
             currentDialog = 0;
 
@@ -34,19 +33,6 @@ public class DialogTrigger : MonoBehaviour
 
             hasSaidDialog = true;
         }
-    }
-
-    public void startDialog()
-    {
-        currentDialog = 0;
-
-        dialogArea.SetActive(true);
-
-        var text = dialogs.dialogs[dialogIDs[currentDialog]];
-
-        dialogArea.GetComponentInChildren<TMP_Text>().SetText(text);
-
-        hasSaidDialog = true;
     }
 
     // Fixed Update is called once per frame
