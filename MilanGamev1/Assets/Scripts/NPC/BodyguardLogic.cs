@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class BodyguardLogic : ShootableLogic
 {
@@ -13,6 +14,9 @@ public class BodyguardLogic : ShootableLogic
     private float timeAtLevelBegin = 0f;
     public bool isActive = false;
     private bool isAnimating = false;
+
+    public UnityEvent startDeath;
+    public UnityEvent startKill;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +37,11 @@ public class BodyguardLogic : ShootableLogic
     public override void kill()
     {
         // TODO: start kill animation?
+        startKill.Invoke();
+
 
         isActive = false;
         isAnimating = true;
-
-        GetComponent<NPC_Status>().isAlive = false;
     }
 
     // Update is called once per frame
@@ -48,6 +52,7 @@ public class BodyguardLogic : ShootableLogic
         if (isAnimating)
         {
             // TODO: do dying animation
+            startDeath.Invoke();
 
             return;
         }

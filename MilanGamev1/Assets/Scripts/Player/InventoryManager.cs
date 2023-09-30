@@ -35,10 +35,6 @@ public class InventoryManager : MonoBehaviour
             firstPickup = true;
             isLvl2 = true;
         }
-        else if(levelID == "lvl_2_pass")
-        {
-            tutorialText.enabled = false;
-        }
     }
 
     // Update is called once per frame
