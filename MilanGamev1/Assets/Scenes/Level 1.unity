@@ -39350,6 +39350,7 @@ GameObject:
   - component: {fileID: 1850816818}
   - component: {fileID: 1850816817}
   - component: {fileID: 1850816816}
+  - component: {fileID: 1850816819}
   m_Layer: 2
   m_Name: lvl Empty (11)
   m_TagString: Untagged
@@ -39387,8 +39388,8 @@ MonoBehaviour:
   cameraPositions: {fileID: 1415985009}
   mainCam: {fileID: 519420031}
   faceDirOnEnter: {x: 1, y: 0}
-  prev: 3
-  next: 7
+  prev: 5
+  next: 6
 --- !u!50 &1850816817
 Rigidbody2D:
   serializedVersion: 4
@@ -39461,6 +39462,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &1850816819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850816814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515dd6dcf81f91f41bdfab2778a4c36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportObject: {fileID: 362987406}
 --- !u!1 &1888215104
 GameObject:
   m_ObjectHideFlags: 0
