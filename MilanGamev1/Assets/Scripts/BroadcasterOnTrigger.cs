@@ -7,6 +7,7 @@ public class BroadcasterOnTrigger : MonoBehaviour
     [SerializeField] private string broadcastMethod;
     [SerializeField] private string broadcastOnTrigger;
     [SerializeField] private GameObject broadcastScope;
+    [SerializeField] private string colliderName = "Player";
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,9 @@ public class BroadcasterOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Player")
+        if (collision.name == colliderName)
         {
-            broadcastScope.BroadcastMessage("getBroadcastTrigger", broadcastOnTrigger);
+            broadcastScope.BroadcastMessage(broadcastMethod, broadcastOnTrigger);
         }
     }
 

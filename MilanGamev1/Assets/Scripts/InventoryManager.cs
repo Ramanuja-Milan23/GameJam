@@ -11,11 +11,22 @@ public class InventoryManager : MonoBehaviour
 
     private List<string> inventory;
     private bool firstPickup = false;
+    private bool isLvl2 = false;
 
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    public void levelBeginBroadcast(string levelID)
+    {
+        // if level 2, then start timer
+        if (levelID == "lvl_2" && !isLvl2)
+        {
+            firstPickup = true;
+            isLvl2 = true;
+        }
     }
 
     // Update is called once per frame

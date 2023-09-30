@@ -31,6 +31,43 @@ public class PathFollower : MonoBehaviour
         receivedMessages = new List<string>();
     }
 
+    // teleports the dog to the node it was going to
+    public void skipCurrentNode(string noarg)
+    {
+        var list = pathFollower.GetComponentsInChildren<PathNode>();
+        Vector3 currentPathNode = list[currentNode].transform.position;
+
+        transform.position = currentPathNode;
+
+        if (currentNode + 1 < list.Length)
+        {
+            // if it was broadcast then pause
+            if (!string.IsNullOrEmpty(list[currentNode].pauseOnMessage) && receivedMessages.Contains(list[currentNode].pauseOnMessage))
+            {
+                isRunning = false;
+                actualSpeed = 0f;
+            }
+            else
+            {
+                currentNode++;
+            }
+        }
+        else
+        {
+            actualSpeed = 0f;
+        }
+        lastNodePos = currentPathNode;
+
+        faceDir = (list[currentNode].transform.position - lastNodePos).normalized;
+
+        if (faceDir.magnitude < 0.3)
+        {
+            faceDir = Vector2.down;
+        }
+
+        timeSinceCurrentNodeStart = 0f;
+    }
+
     public void getBroadcastTrigger(string broadCastMessage)
     {
         if(isWaitingForTrigger)

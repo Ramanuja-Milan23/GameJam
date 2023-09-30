@@ -14,6 +14,8 @@ public class DogKill : MonoBehaviour
 
     public void kill()
     {
+        Debug.Log("Killed Dog");
+
         // disable movement
         transform.GetComponent<PathFollower>().enabled = false;
 
