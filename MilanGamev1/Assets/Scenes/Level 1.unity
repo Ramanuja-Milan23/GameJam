@@ -27133,6 +27133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 796684046}
   - component: {fileID: 796684047}
+  - component: {fileID: 796684048}
   m_Layer: 0
   m_Name: Shop
   m_TagString: Untagged
@@ -27184,7 +27185,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.00000047683716, y: 0}
@@ -27200,6 +27201,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.8194475, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &796684048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796684045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cd97d4a86377b4ba3d45ab6b494978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogArea: {fileID: 1421195597}
+  dialogs: {fileID: 1923597225}
+  dialogIDs:
+  - shop_1
 --- !u!1 &811954104
 GameObject:
   m_ObjectHideFlags: 0
@@ -27468,6 +27485,7 @@ GameObject:
   - component: {fileID: 938589226}
   - component: {fileID: 938589227}
   - component: {fileID: 938589228}
+  - component: {fileID: 938589229}
   m_Layer: 0
   m_Name: BodyguardB
   m_TagString: Untagged
@@ -27604,6 +27622,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &938589229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938589224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c62bcc8a46cb742a9e9d8cfc35bbf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastMethod: getBroadcastTrigger
+  broadcastOnTrigger: lvl_3_pass
+  broadcastScope: {fileID: 2023121778}
 --- !u!1 &950168941
 GameObject:
   m_ObjectHideFlags: 0
@@ -30053,6 +30086,7 @@ GameObject:
   - component: {fileID: 1590346710}
   - component: {fileID: 1590346711}
   - component: {fileID: 1590346712}
+  - component: {fileID: 1590346713}
   m_Layer: 0
   m_Name: BodyguardA
   m_TagString: Untagged
@@ -30189,6 +30223,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1590346713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590346708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c62bcc8a46cb742a9e9d8cfc35bbf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastMethod: getBroadcastTrigger
+  broadcastOnTrigger: lvl_3_pass
+  broadcastScope: {fileID: 2023121778}
 --- !u!1 &1623263546
 GameObject:
   m_ObjectHideFlags: 0
@@ -33952,11 +34001,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogs:
     m_keys:
-    - D1
-    - D2
+    - intro_1
+    - intro_2
+    - shop_1
     m_values:
-    - Hello
+    - 'You: What a cute puppy! (Press Space to continue...)'
     - There
+    - You buy all the items from shop
 --- !u!4 &1932518131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5716454185587542204, guid: 6189e00f2790f8e4aa0ec5e7ed51607f, type: 3}

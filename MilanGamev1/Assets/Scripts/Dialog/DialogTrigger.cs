@@ -40,7 +40,7 @@ public class DialogTrigger : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(currentDialog < dialogs.dialogs.Count)
+            if(currentDialog + 1 < dialogIDs.Count)
             {
                 currentDialog++;
 
@@ -51,6 +51,7 @@ public class DialogTrigger : MonoBehaviour
                     dialogArea.GetComponentInChildren<TMP_Text>().SetText(text);
                 }
             }
+            else dialogArea.SetActive(false);
         }
     }
 }

@@ -19,6 +19,14 @@ public class InventoryManager : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.name == "Shop")
+        {
+            inventory.Add("Gun");
+        }
+    }
+
     public void getBroadcastTrigger(string levelID)
     {
         // if level 2, then start timer
