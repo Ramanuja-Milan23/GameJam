@@ -12,14 +12,19 @@ public class DogKill : MonoBehaviour
         
     }
 
+    public void kill()
+    {
+        // disable movement
+        transform.GetComponent<PathFollower>().enabled = false;
+
+        // TODO: Do kill animations
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (names.Contains(collision.name))
         {
-            // disable movement
-            transform.GetComponent<PathFollower>().enabled = false;
-
-            // TODO: Do kill animations
+            kill();
         }
     }
 

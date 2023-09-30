@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> Pickables;
     [SerializeField] private float radius = 0f;
+    [SerializeField] private TMP_Text tutorialText;
 
     private List<string> inventory;
+    private bool firstPickup = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,23 +21,32 @@ public class InventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(firstPickup)
+        {
+            tutorialText.SetText("Press R to pickup items");
+        }
+
         // Add nearby objects to inventory if R is pressed
         if (Input.GetKeyDown(KeyCode.R))
         {
             if (Pickables != null)
             {
-                if (Input.GetKeyDown(KeyCode.R))
+                foreach (var nearbyObject in Pickables)
                 {
-                    foreach (var nearbyObject in Pickables)
-                    {
-                        if (Vector2.Distance(nearbyObject.transform.position, transform.position) > radius) continue;
+                    if (Vector2.Distance(nearbyObject.transform.position, transform.position) > radius) continue;
 
-                        Debug.Log("Picked Up " + nearbyObject.name);
+                    Debug.Log("Picked Up " + nearbyObject.name);
 
-                        if(inventory == null) inventory = new List<string> { nearbyObject.name };
-                        else inventory.Add(nearbyObject.name);
-                    }
+                    if(inventory == null) inventory = new List<string> { nearbyObject.name };
+                    else inventory.Add(nearbyObject.name);
                 }
+
+                if(firstPickup)
+                {
+                    tutorialText.SetText("Press E to use item");
+                }
+
+                firstPickup = false;
             }
         }
         // empty inventory
@@ -49,6 +61,7 @@ public class InventoryManager : MonoBehaviour
 
             RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
 
+            // DEBUG
             Debug.Log("Hit " + shoot.collider.name);
 
             if (shoot.collider != null)
