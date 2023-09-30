@@ -2675,6 +2675,7 @@ GameObject:
   - component: {fileID: 393487309}
   - component: {fileID: 393487308}
   - component: {fileID: 393487307}
+  - component: {fileID: 393487310}
   m_Layer: 2
   m_Name: lvl Empty (8)
   m_TagString: Untagged
@@ -2786,6 +2787,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.5, y: 0.05}
   m_EdgeRadius: 0
+--- !u!114 &393487310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393487305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f80539400176f47b856247064c2b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastMethod: getBroadcastTrigger
+  broadcastOnTrigger: lvl_3
+  broadcastScope:
+  - {fileID: 1644899023}
+  colliderName: Player
 --- !u!1 &399960493
 GameObject:
   m_ObjectHideFlags: 0

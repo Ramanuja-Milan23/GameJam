@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class NPC_QTE : MonoBehaviour
 {
@@ -40,14 +41,18 @@ public class NPC_QTE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isActive) return;
+
         if (Time.realtimeSinceStartup - timeAtLevelBegin > timeTillKill && qteSlider.activeSelf)
         {
             qteSlider.SetActive(false);
+            isActive = false;
         }
 
         // if all are dead
         if (npcStatus.All(x => !x.isAlive))
         {
+            isActive = false;
             qteSlider.SetActive(false);
             GetComponent<BroadcasterOnTrigger>().trigger();
         }
