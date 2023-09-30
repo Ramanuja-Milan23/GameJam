@@ -9,6 +9,8 @@ public class BroadcasterOnTrigger : MonoBehaviour
     [SerializeField] private List<GameObject> broadcastScope;
     [SerializeField] private string colliderName = "Player";
 
+    private bool hasBroadcasted = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,21 +19,29 @@ public class BroadcasterOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (hasBroadcasted) return;
+
         if (collision.name == colliderName)
         {
             foreach (GameObject go in broadcastScope)
             {
                 go.BroadcastMessage(broadcastMethod, broadcastOnTrigger);
             }
+
+            hasBroadcasted = true;
         }
     }
 
     public void trigger()
     {
+        if (hasBroadcasted) return;
+
         foreach (GameObject go in broadcastScope)
         {
             go.BroadcastMessage(broadcastMethod, broadcastOnTrigger);
         }
+
+        hasBroadcasted = true;
     }
 
     // Update is called once per frame

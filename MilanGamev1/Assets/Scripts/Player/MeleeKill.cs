@@ -21,10 +21,8 @@ public class MeleeKill : MonoBehaviour
 
             if (collider != null)
             {
-                Debug.Log(collider.name);
-
                 // kill the guy
-                if(collider.isActiveAndEnabled) collider.GetComponent<ShootableLogic>().kill();
+                if(collider.GetComponent<NPC_Status>().isAlive) collider.GetComponent<ShootableLogic>().kill();
             }
         }
     }
