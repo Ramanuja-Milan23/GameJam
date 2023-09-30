@@ -26,6 +26,14 @@ public class BroadcasterOnTrigger : MonoBehaviour
         }
     }
 
+    public void trigger()
+    {
+        foreach (GameObject go in broadcastScope)
+        {
+            go.BroadcastMessage(broadcastMethod, broadcastOnTrigger);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
