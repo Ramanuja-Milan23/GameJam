@@ -17,6 +17,7 @@ public class DeathLoop : MonoBehaviour
     bool killAnimation()
     {
         // TODO: show suicide animations
+        FindObjectOfType<AudioManager>().Play("PlayerGlitch");
 
         return true;
     }
