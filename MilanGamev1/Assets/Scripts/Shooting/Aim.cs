@@ -19,12 +19,12 @@ public class Aim : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 shootDir = playerMovement.faceDir;
+        //Vector2 shootDir = playerMovement.faceDir;
 
-        RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir, 100f, ~(1 << 7));
+        //RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir, 100f, ~(1 << 7));
 
-        if(shoot.collider != null) Debug.DrawLine(transform.position, shoot.point, Color.red);
+        //if(shoot.collider != null) Debug.DrawLine(transform.position, shoot.point, Color.red);
 
-        Debug.DrawRay(transform.position, shootDir, Color.blue);
+        //Debug.DrawRay(transform.position, shootDir, Color.blue);
     }
 }

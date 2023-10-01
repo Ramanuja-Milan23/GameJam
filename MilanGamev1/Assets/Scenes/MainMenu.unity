@@ -667,7 +667,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e8009735f161ad47a4c36acfc8839e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introText: {fileID: 0}
+  introText: {fileID: 1833136106}
+  image: {fileID: 1078750921}
+  dogLove: {fileID: 21300000, guid: cfe64c8314145ba4eabb4e63db5b7728, type: 3}
+  button: {fileID: 467638471}
+  title: {fileID: 1459276210}
 --- !u!4 &1390551584
 Transform:
   m_ObjectHideFlags: 0
@@ -1045,8 +1049,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1074,7 +1078,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -260.53815, y: -29.32468, z: -234.5971, w: -29.324661}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

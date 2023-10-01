@@ -167,9 +167,9 @@ public class PathFollower : MonoBehaviour
         }
 
         // Draw the path
-        for(int i = 0; i < list.Length - 1; i++)
-        {
-            Debug.DrawLine(list[i].transform.position, list[i+1].transform.position, Color.red);
-        }
+        //for(int i = 0; i < list.Length - 1; i++)
+        //{
+        //    Debug.DrawLine(list[i].transform.position, list[i+1].transform.position, Color.red);
+        //}
     }
 }
