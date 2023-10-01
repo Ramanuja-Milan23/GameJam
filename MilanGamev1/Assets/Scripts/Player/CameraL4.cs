@@ -7,10 +7,10 @@ public class CameraL4 : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float x_clamp_left = 0f;
     [SerializeField] private float x_clamp_right = 0f;
-    [SerializeField] private string levelID_active;
+    [SerializeField] public string levelID_active;
     [SerializeField] private string levelID_deactive;
 
-    [SerializeField] private bool isActive = false;
+    [SerializeField] public bool isActive = false;
 
     // Start is called before the first frame update
     void Start()
