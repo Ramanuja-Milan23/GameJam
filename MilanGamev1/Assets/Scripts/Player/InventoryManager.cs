@@ -23,14 +23,16 @@ public class InventoryManager : MonoBehaviour
         ;
     }
 
-    private void OnTriggerEntry2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Shop") pickupGunsOnRpress = true;
+        if (collision.name == "Shop"){ pickupGunsOnRpress = true;}
+        Debug.Log("Entered" + collision.name);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        pickupGunsOnRpress = false;
+        if (collision.name == "Shop") pickupGunsOnRpress = false;
+        Debug.Log("Exited" + collision.name);
     }
 
     public void getBroadcastTrigger(string levelID)
@@ -115,6 +117,9 @@ public class InventoryManager : MonoBehaviour
         }
         if (inventory.Contains("Gun")){
             animator.SetBool("HasGun",true);
+        }
+        else {
+            animator.SetBool("HasGun",false);
         }
     }
 }
