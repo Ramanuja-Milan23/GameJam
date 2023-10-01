@@ -28751,7 +28751,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.79887, y: 2.2068634}
+  m_Size: {x: 4.79887, y: 1.5}
   m_EdgeRadius: 0
 --- !u!114 &796684048
 MonoBehaviour:
@@ -41808,8 +41808,8 @@ MonoBehaviour:
   radius: 3
   shootRadius: 50
   tutorialText: {fileID: 66849268}
-  inventory:
-  - Gun
+  animator: {fileID: 1763530634}
+  inventory: []
 --- !u!114 &1763530637
 MonoBehaviour:
   m_ObjectHideFlags: 0
