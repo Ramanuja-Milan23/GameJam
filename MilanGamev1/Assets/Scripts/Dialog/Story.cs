@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class Story : MonoBehaviour
 {
@@ -136,7 +137,7 @@ public class Story : MonoBehaviour
         }
         if (currentLoopDialogs.Count == 0) return;
 
-        if (!isActive)
+        if (!isActive && currentDialog != currentLoopDialogs.Count)
         {
             dialogArea.SetActive(true);
             isActive = true;
@@ -162,7 +163,7 @@ public class Story : MonoBehaviour
                 tutorialText.SetText("Save the Dog!");
             }
 
-            if (currentDialog < currentLoopDialogs.Count - 1)
+            if (currentDialog < currentLoopDialogs.Count)
             {
                 currentDialog++;
             }
