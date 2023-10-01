@@ -108,6 +108,7 @@ public class InventoryManager : MonoBehaviour
             Vector2 shootDir = GetComponent<Movement>().faceDir;
 
             RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir, shootRadius, ~(1 << 7));
+            FindObjectOfType<AudioManager>().Play("Gunshot");
             
             if (shoot.collider != null)
             {
