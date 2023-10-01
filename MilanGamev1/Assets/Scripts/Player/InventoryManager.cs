@@ -10,6 +10,8 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private float shootRadius = 50f;
     [SerializeField] private TMP_Text tutorialText;
 
+    public Animator animator;
+
     public List<string> inventory;
     private bool firstPickup = false;
     private bool isLvl2 = false;
@@ -106,6 +108,8 @@ public class InventoryManager : MonoBehaviour
                 else Debug.Log("Error:" + shoot.collider.name);
             }
         }
-
+        if (inventory.Contains("Gun")){
+            animator.SetBool("HasGun",true);
+        }
     }
 }
