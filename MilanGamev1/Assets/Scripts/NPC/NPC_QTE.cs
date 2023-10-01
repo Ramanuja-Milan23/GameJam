@@ -55,7 +55,11 @@ public class NPC_QTE : MonoBehaviour
         {
             isActive = false;
             qteSlider.SetActive(false);
-            GetComponent<BroadcasterOnTrigger>().trigger();
+
+            foreach(var trig in GetComponents<BroadcasterOnTrigger>())
+            {
+                trig.trigger();
+            }
         }
         else
         {

@@ -2421,6 +2421,7 @@ GameObject:
   - component: {fileID: 329977354}
   - component: {fileID: 329977355}
   - component: {fileID: 329977356}
+  - component: {fileID: 329977357}
   m_Layer: 0
   m_Name: Bodyguards
   m_TagString: Untagged
@@ -2478,7 +2479,25 @@ MonoBehaviour:
   broadcastScope:
   - {fileID: 1644899023}
   colliderName: Player
-  isScriptOnly: 0
+  isScriptOnly: 1
+--- !u!114 &329977357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329977353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f80539400176f47b856247064c2b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastMethod: dialogueOnLevel
+  broadcastOnTrigger: lvl_3_pass
+  broadcastScope:
+  - {fileID: 1387245981}
+  colliderName: Player
+  isScriptOnly: 1
 --- !u!1 &335505441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,7 +2606,7 @@ Transform:
   m_GameObject: {fileID: 341250190}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.63, y: 29.21, z: 0}
+  m_LocalPosition: {x: -9.08, y: 29.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2989,6 +3008,7 @@ GameObject:
   - component: {fileID: 393487308}
   - component: {fileID: 393487307}
   - component: {fileID: 393487310}
+  - component: {fileID: 393487311}
   m_Layer: 2
   m_Name: lvl Empty (8)
   m_TagString: Untagged
@@ -3116,6 +3136,24 @@ MonoBehaviour:
   broadcastOnTrigger: lvl_3
   broadcastScope:
   - {fileID: 1644899023}
+  colliderName: Player
+  isScriptOnly: 0
+--- !u!114 &393487311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393487305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f80539400176f47b856247064c2b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastMethod: dialogueOnLevel
+  broadcastOnTrigger: lvl_3
+  broadcastScope:
+  - {fileID: 1387245981}
   colliderName: Player
   isScriptOnly: 0
 --- !u!1 &399960493
@@ -3338,7 +3376,7 @@ Transform:
   m_GameObject: {fileID: 447552599}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.31, y: 29.21, z: 0}
+  m_LocalPosition: {x: 6.99, y: 29.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4212,6 +4250,7 @@ GameObject:
   - component: {fileID: 568393447}
   - component: {fileID: 568393446}
   - component: {fileID: 568393449}
+  - component: {fileID: 568393450}
   m_Layer: 2
   m_Name: lvl Empty (7)
   m_TagString: Untagged
@@ -4339,6 +4378,24 @@ MonoBehaviour:
   broadcastOnTrigger: lvl_3
   broadcastScope:
   - {fileID: 1644899023}
+  colliderName: Player
+  isScriptOnly: 0
+--- !u!114 &568393450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568393444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f80539400176f47b856247064c2b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastMethod: dialogueOnLevel
+  broadcastOnTrigger: lvl_3
+  broadcastScope:
+  - {fileID: 1387245981}
   colliderName: Player
   isScriptOnly: 0
 --- !u!1 &569397224
@@ -31616,6 +31673,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1387245981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1387245983}
+  - component: {fileID: 1387245982}
+  m_Layer: 0
+  m_Name: StoryObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1387245982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387245981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337326b0120ab824c8aedf5abc7c7d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogArea: {fileID: 1421195597}
+  tutorialText: {fileID: 66849268}
+--- !u!4 &1387245983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387245981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.92778254, y: -0.4737785, z: -1.05476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1387931753
 GameObject:
   m_ObjectHideFlags: 0
@@ -41592,7 +41695,6 @@ GameObject:
   - component: {fileID: 1763530635}
   - component: {fileID: 1763530636}
   - component: {fileID: 1763530637}
-  - component: {fileID: 1763530638}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -41687,7 +41789,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0}
   faceDir: {x: 0, y: 0}
   hasGun: 0
-  Speed: 100
+  Speed: 110
   rb: {fileID: 1763530630}
   animator: {fileID: 1763530634}
 --- !u!212 &1763530632
@@ -41751,7 +41853,7 @@ Transform:
   m_GameObject: {fileID: 1763530628}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.33, y: -1.18, z: 0}
+  m_LocalPosition: {x: -8.47, y: -1.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41824,25 +41926,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dogKilled: {fileID: 2023121784}
---- !u!114 &1763530638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763530628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 337326b0120ab824c8aedf5abc7c7d63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogArea: {fileID: 1421195597}
-  dialogs: {fileID: 1923597225}
-  dialogIDsLoop2:
-  - loop_2
-  dialogIDsLoop3:
-  - loop_3
-  dialogIDsDefault: []
 --- !u!1 &1789500615
 GameObject:
   m_ObjectHideFlags: 0
@@ -46590,7 +46673,7 @@ Transform:
   m_GameObject: {fileID: 2023121778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.35, y: 0.4, z: 0}
+  m_LocalPosition: {x: -8.5, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46818,6 +46901,7 @@ GameObject:
   - component: {fileID: 2043131456}
   - component: {fileID: 2043131459}
   - component: {fileID: 2043131458}
+  - component: {fileID: 2043131460}
   m_Layer: 2
   m_Name: lvl 12
   m_TagString: Untagged
@@ -46964,6 +47048,24 @@ MonoBehaviour:
   broadcastScope:
   - {fileID: 1763530628}
   - {fileID: 1712383665}
+  colliderName: Player
+  isScriptOnly: 0
+--- !u!114 &2043131460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043131451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f80539400176f47b856247064c2b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastMethod: dialogueOnLevel
+  broadcastOnTrigger: lvl_2
+  broadcastScope:
+  - {fileID: 1387245981}
   colliderName: Player
   isScriptOnly: 0
 --- !u!1 &2045555743
@@ -47590,3 +47692,4 @@ SceneRoots:
   - {fileID: 162804747}
   - {fileID: 2705172}
   - {fileID: 239380027}
+  - {fileID: 1387245983}
