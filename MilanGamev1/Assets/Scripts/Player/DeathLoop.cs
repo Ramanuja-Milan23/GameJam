@@ -29,7 +29,7 @@ public class DeathLoop : MonoBehaviour
 
         if(killAnimation())
         {
-            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

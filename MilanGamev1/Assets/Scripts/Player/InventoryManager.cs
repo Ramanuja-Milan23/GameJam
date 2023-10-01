@@ -13,6 +13,7 @@ public class InventoryManager : MonoBehaviour
     public List<string> inventory;
     private bool firstPickup = false;
     private bool isLvl2 = false;
+    private bool pickupGunsOnRpress = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,12 +21,14 @@ public class InventoryManager : MonoBehaviour
         ;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEntry2D(Collider2D collision)
     {
-        if(collision.name == "Shop" && Input.GetKey(KeyCode.R))
-        {
-            inventory.Add("Gun");
-        }
+        if (collision.name == "Shop") pickupGunsOnRpress = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        pickupGunsOnRpress = false;
     }
 
     public void getBroadcastTrigger(string levelID)
@@ -48,6 +51,11 @@ public class InventoryManager : MonoBehaviour
         if(firstPickup)
         {
             tutorialText.SetText("Press R to pickup");
+        }
+
+        if (pickupGunsOnRpress && Input.GetKeyDown(KeyCode.R))
+        {
+            inventory.Add("Gun");
         }
 
         // Add nearby objects to inventory if R is pressed
@@ -99,11 +107,8 @@ public class InventoryManager : MonoBehaviour
             
             if (shoot.collider != null)
             {
-                Debug.Log(shoot.collider);
-
                 if (shoot.collider.GetComponent<Shootable>() != null) shoot.collider.GetComponent<Shootable>().shot();
                 else if (shoot.collider.GetComponent<ShootableLogic>() != null) shoot.collider.GetComponent<ShootableLogic>().kill();
-                else Debug.Log("Error:" + shoot.collider.name);
             }
         }
 
