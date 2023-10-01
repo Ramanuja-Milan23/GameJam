@@ -18,8 +18,6 @@ public class DogKill : MonoBehaviour
 
     public void kill()
     {
-        Debug.Log("Killed Dog");
-
         isDogDead = true;
 
         // disable movement

@@ -9,19 +9,43 @@ public class LoopDialogs : MonoBehaviour
 
     [SerializeField] private GameObject dialogArea;
     [SerializeField] private Dialogs dialogs;
-    [SerializeField] private List<string> dialogIDsLoop2;
-    [SerializeField] private List<string> dialogIDsLoop3;
-    [SerializeField] private List<string> dialogIDsDefault;
+    
+    private List<string> dialogIDsLoop2;
+    private List<string> dialogIDsLoop3;
+    private List<string> dialogIDsDefault;
 
     private List<string> currentLoopDialogs;
 
     private int currentDialog = 0;
     private bool isActive = false;
 
+    string formatString(string dialog)
+    {
+        string final = "";
+
+        foreach (char c in dialog)
+        {
+            if(c == '+') final += '\n';
+            else final += c;
+        }
+
+        return final;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        if(loopCount == 1)
+        dialogIDsLoop2 = new List<string>
+        {
+            "Huh?...+Didn't I die?",
+        };
+
+        dialogIDsLoop3 = new List<string>
+        {
+            "What?...+Do I loop each time I die?",
+        };
+
+        if (loopCount == 1)
         {
             currentLoopDialogs = dialogIDsLoop2;
         }
@@ -31,44 +55,36 @@ public class LoopDialogs : MonoBehaviour
         }
         else
         {
-            currentLoopDialogs = dialogIDsDefault;
+            currentLoopDialogs = null;
         }
 
         loopCount++;
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (currentLoopDialogs.Count == 0) return;
+        if(currentLoopDialogs == null) return;
+
         if(!isActive)
         {
             dialogArea.SetActive(true);
             isActive = true;
+
+            currentDialog = 0;
+
+            var text = currentLoopDialogs[currentDialog];
+
+            dialogArea.GetComponentInChildren<TMP_Text>().SetText(formatString(text));
+
+            Time.timeScale = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isActive)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (currentDialog + 1 < currentLoopDialogs.Count)
-            {
-                currentDialog++;
-
-                if (currentDialog == dialogs.dialogs.Count)
-                {
-                    isActive = false;
-                    dialogArea.SetActive(false);
-                }
-                else
-                {
-                    var text = dialogs.dialogs[currentLoopDialogs[currentDialog]];
-                    dialogArea.GetComponentInChildren<TMP_Text>().SetText(text);
-                }
-            }
-            else
-            {
-                isActive = false;
-                dialogArea.SetActive(false);
-            }
+            dialogArea.SetActive(false);
+            Time.timeScale = 1;
         }
     }
 }

@@ -41592,6 +41592,7 @@ GameObject:
   - component: {fileID: 1763530635}
   - component: {fileID: 1763530636}
   - component: {fileID: 1763530637}
+  - component: {fileID: 1763530638}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -41823,6 +41824,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dogKilled: {fileID: 2023121784}
+--- !u!114 &1763530638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763530628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337326b0120ab824c8aedf5abc7c7d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogArea: {fileID: 1421195597}
+  dialogs: {fileID: 1923597225}
+  dialogIDsLoop2:
+  - loop_2
+  dialogIDsLoop3:
+  - loop_3
+  dialogIDsDefault: []
 --- !u!1 &1789500615
 GameObject:
   m_ObjectHideFlags: 0
@@ -42532,6 +42552,8 @@ MonoBehaviour:
     - hint_1
     - hint_2
     - hint_3
+    - loop_2
+    - loop_3
     m_values:
     - 'You: What a cute puppy! (Press Space to continue...)'
     - There
@@ -42544,6 +42566,8 @@ MonoBehaviour:
     - 2>9341
     - 3>1893
     - 1>2868
+    - What?...+Didn't I die?
+    - Am I looping?...
 --- !u!4 &1932518131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5716454185587542204, guid: 6189e00f2790f8e4aa0ec5e7ed51607f, type: 3}
