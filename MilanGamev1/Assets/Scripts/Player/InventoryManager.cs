@@ -6,7 +6,8 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> Pickables;
-    [SerializeField] private float radius = 0f;
+    [SerializeField] private float radius = 3f;
+    [SerializeField] private float shootRadius = 50f;
     [SerializeField] private TMP_Text tutorialText;
 
     public List<string> inventory;
@@ -82,7 +83,7 @@ public class InventoryManager : MonoBehaviour
 
             Vector2 shootDir = GetComponent<Movement>().faceDir;
 
-            RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
+            RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir, shootRadius, ~(1 << 7));
 
             if (shoot.collider != null)
             {
@@ -94,10 +95,12 @@ public class InventoryManager : MonoBehaviour
         {
             Vector2 shootDir = GetComponent<Movement>().faceDir;
 
-            RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
+            RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir, shootRadius, ~(1 << 7));
             
             if (shoot.collider != null)
             {
+                Debug.Log(shoot.collider);
+
                 if (shoot.collider.GetComponent<Shootable>() != null) shoot.collider.GetComponent<Shootable>().shot();
                 else if (shoot.collider.GetComponent<ShootableLogic>() != null) shoot.collider.GetComponent<ShootableLogic>().kill();
                 else Debug.Log("Error:" + shoot.collider.name);

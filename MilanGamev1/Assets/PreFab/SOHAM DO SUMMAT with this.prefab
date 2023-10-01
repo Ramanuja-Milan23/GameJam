@@ -165,6 +165,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b1499e181458042a2637a4dd9aec18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  faceDir: {x: 0, y: 0}
+  timeTillKill: 0
+  dog: {fileID: 0}
+  qteSlider: {fileID: 0}
   startDeath:
     m_PersistentCalls:
       m_Calls:

@@ -21,7 +21,7 @@ public class Aim : MonoBehaviour
     {
         Vector2 shootDir = playerMovement.faceDir;
 
-        RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir);
+        RaycastHit2D shoot = Physics2D.Raycast(transform.position, shootDir, 100f, ~(1 << 7));
 
         if(shoot.collider != null) Debug.DrawLine(transform.position, shoot.point, Color.red);
 

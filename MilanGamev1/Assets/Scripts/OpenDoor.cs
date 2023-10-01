@@ -5,6 +5,7 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     [SerializeField] private GameObject trigger;
+    [SerializeField] private string broadcastID;
     
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,7 @@ public class OpenDoor : MonoBehaviour
     public void getBroadcastTrigger(string levelID)
     {
         // if level 2, then start timer
-        if (levelID == "lvl_4_pass")
+        if (levelID == broadcastID)
         {
             GetComponent<SpriteRenderer>().enabled = false;
             trigger.SetActive(true);

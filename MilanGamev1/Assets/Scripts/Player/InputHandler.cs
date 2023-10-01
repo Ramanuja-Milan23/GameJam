@@ -13,7 +13,7 @@ public class InputHandler : MonoBehaviour
 
     private bool isActive = false;
     private string input = string.Empty;
-    private bool pressedR = false;
+    private bool showIfRpressed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,22 +21,32 @@ public class InputHandler : MonoBehaviour
 
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Player" && pressedR)
+        if (collision.name == "Player")
         {
+            showIfRpressed = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        showIfRpressed = false;
+    }
+
+    // Fixed Update is called once per frame
+    void Update()
+    {
+        if (showIfRpressed && Input.GetKeyDown(KeyCode.R))
+        {
+            showIfRpressed = false;
+
             isActive = true;
 
             dialogArea.SetActive(true);
 
             dialogArea.GetComponentInChildren<TMP_Text>().SetText(playerPrompt);
         }
-    }
-
-    // Fixed Update is called once per frame
-    void Update()
-    {
-        pressedR = Input.GetKey(KeyCode.R);
 
         if (isActive)
         {
