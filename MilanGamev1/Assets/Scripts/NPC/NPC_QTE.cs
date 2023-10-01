@@ -48,6 +48,7 @@ public class NPC_QTE : MonoBehaviour
             dog.GetComponent<DogKill>().kill();
             qteSlider.SetActive(false);
             isActive = false;
+            FindObjectOfType<AudioManager>().Play("FBI");
         }
 
         // if all are dead
