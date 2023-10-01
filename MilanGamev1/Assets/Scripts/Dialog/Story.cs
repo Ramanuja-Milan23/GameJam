@@ -156,7 +156,7 @@ public class Story : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             if (loopCount == 2 && isLvlOne)
             {
@@ -165,6 +165,10 @@ public class Story : MonoBehaviour
 
             if (currentDialog < currentLoopDialogs.Count)
             {
+                var text = currentLoopDialogs[currentDialog];
+
+                dialogArea.GetComponentInChildren<TMP_Text>().SetText(formatString(text));
+
                 currentDialog++;
             }
             else

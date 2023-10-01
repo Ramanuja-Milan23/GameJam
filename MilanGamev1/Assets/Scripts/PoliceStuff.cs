@@ -34,7 +34,7 @@ public class PoliceStuff : ShootableLogic
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D shoot = Physics2D.Raycast(transform.position, faceDir, lookRadius, 1 << 7);
+        RaycastHit2D shoot = Physics2D.Raycast(transform.position, faceDir, lookRadius, 1 << 7 | 1);
 
         if(shoot.collider != null)
         {
