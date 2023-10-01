@@ -742,8 +742,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 665156739}
     - target: {fileID: -6757900407884388525, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: CustomPos.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6757900407884388525, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: timeTillKill
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 854237635095809881, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.203125
       objectReference: {fileID: 0}
     - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -785,6 +793,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5029345339294820873, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -458589283, guid: 6fdc3730524fdb84ba18d2ac4747f9d1, type: 3}
     - target: {fileID: 8042208482295939136, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: m_Name
       value: Police (2)
@@ -5026,8 +5038,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 665156739}
     - target: {fileID: -6757900407884388525, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: CustomPos.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6757900407884388525, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: timeTillKill
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 854237635095809881, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.203125
+      objectReference: {fileID: 0}
+    - target: {fileID: 854237635095809881, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.296875
       objectReference: {fileID: 0}
     - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5069,6 +5093,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5029345339294820873, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1779853311, guid: 6fdc3730524fdb84ba18d2ac4747f9d1, type: 3}
     - target: {fileID: 8042208482295939136, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: m_Name
       value: Police (4)
@@ -30041,8 +30069,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 665156739}
     - target: {fileID: -6757900407884388525, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: CustomPos.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6757900407884388525, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: timeTillKill
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 854237635095809881, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.203125
+      objectReference: {fileID: 0}
+    - target: {fileID: 854237635095809881, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.296875
       objectReference: {fileID: 0}
     - target: {fileID: 3257476267140883893, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30084,6 +30124,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5029345339294820873, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 562652775, guid: 6fdc3730524fdb84ba18d2ac4747f9d1, type: 3}
     - target: {fileID: 8042208482295939136, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: m_Name
       value: Police (3)
@@ -33136,7 +33180,7 @@ GameObject:
   - component: {fileID: 1623263549}
   - component: {fileID: 1623263548}
   - component: {fileID: 1623263550}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tile Base Next Lvls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41117,6 +41161,7 @@ MonoBehaviour:
   timeTillKill: 0
   dog: {fileID: 0}
   qteSlider: {fileID: 0}
+  CustomPos: {x: 0, y: 0, z: 0}
   startDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -47545,6 +47590,10 @@ PrefabInstance:
       propertyPath: qteSlider
       value: 
       objectReference: {fileID: 665156739}
+    - target: {fileID: -6757900407884388525, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
+      propertyPath: CustomPos.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: -6757900407884388525, guid: 80b041d9a2c1c1e4baa2e82c96a9483d, type: 3}
       propertyPath: timeTillKill
       value: 3

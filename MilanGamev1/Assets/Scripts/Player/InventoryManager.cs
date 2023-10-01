@@ -26,13 +26,13 @@ public class InventoryManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "Shop"){ pickupGunsOnRpress = true;}
-        Debug.Log("Entered" + collision.name);
+        //Debug.Log("Entered" + collision.name);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name == "Shop") pickupGunsOnRpress = false;
-        Debug.Log("Exited" + collision.name);
+        //Debug.Log("Exited" + collision.name);
     }
 
     public void getBroadcastTrigger(string levelID)

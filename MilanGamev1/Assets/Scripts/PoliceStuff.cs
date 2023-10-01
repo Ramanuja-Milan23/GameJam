@@ -10,8 +10,10 @@ public class PoliceStuff : ShootableLogic
     [SerializeField] private float timeTillKill = 0f;
     [SerializeField] private GameObject dog;
     [SerializeField] private GameObject qteSlider;
+    [SerializeField] public Vector3 CustomPos;  
 
     public UnityEvent startDeath;
+
 
     private float lookRadius = 10f;
     private float timeAtKillBegin = 0f;
@@ -38,6 +40,7 @@ public class PoliceStuff : ShootableLogic
 
         if(shoot.collider != null)
         {
+            Debug.Log("collision with"+shoot.collider.name);
             if(shoot.collider.name == "Player" && !isKilling)
             {
                 timeAtKillBegin = Time.realtimeSinceStartup;
